@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!-- head -->
+
+<head>
+<title>ASSIREM : Résidence  &amp; Maison de Retraite Médicalisée </title>
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="Maisons de retraite pour personnes âgées" />
+<meta name="keywords" content="Assirem, Maison, Medicalisé, Maisons de retraite ">
+<meta name="author" content="Naoual & Fatma" />
+<meta name="MobileOptimized" content="320" />
+
+<!-- favicon-icon -->
+<link rel="icon" type="image/icon" href="images/favicon/favicon.ico">
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Menu marker CSS -->
+<link href="css/fontello.css" rel="stylesheet">
+<!--  fonts -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,800" rel="stylesheet">
+<!-- Font Awesome CSS -->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!-- Font simple-line-icons CSS -->
+<link href="css/simple-line-icons.css" rel="stylesheet">
+<!-- Font Custom  CSS -->
+<link href="css/menumaker.css" rel="stylesheet">
+<!-- OWL CSS -->
+<link href="css/owl.carousel.css" rel="stylesheet">
+<!--  Style CSS -->
+<link href="css/style.css" rel="stylesheet">
+<!-- Stucture CSS -->
+<link href="css/stucture.css" rel="stylesheet">
+
+</head>
+<!-- /end head -->
+
+<body>
+<!--  Topbar -->
+<div class="topbar">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-sm-5">
+        <p class="wel-msg">Bienvenu Chez ASSIREM | Maison de Retraite Médicalisée</p>
+      </div>
+      <div class="col-md-7 col-sm-7 hidden-xs">
+        <div class="topbar-contact"> <span class="topbar-email topbar-info"><a href="#"><i class="fa fa-envelope"></i>info@maison_retraire.com</a>
+            <span class="topbar-info" ><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>0193950000</a></span> 
+      </div>
+    </div>
+  </div>
+</div>    
+<!-- /Topbar -->
+    <!-- Header -->
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a style="width: 30%" class="navbar-brand" href="#"  th:href="@{/}"><img src="images/Assirem-logo.png" class="img-responsive" alt="Logo"></a> <strong style="color: black; line-height:300%; position: absolute; margin-left: 10%;font-size: 1.5em; "><i>ASSIREM</i></strong> <p style="color: black;"></div>
+                <div class="col-md-9">
+                    <div class="menu-box">
+                        <div id="navmenu">
+                            <ul>
+                                <li><a href="#" th:href="@{/index}">Accueil</a>  </li>
+                                <li><a href="#">Nos engagements</a>
+                                    <ul>
+                                        <li><a href="#" th:href="@{/expertise}">Expertise médicale</a></li>
+                                        <li><a href="#" th:href="@{/accompagnement}">Accompagnement <br><br>personnalisé</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Services</a>
+                                    <ul>
+                                        <li><a href="#" th:href="@{/nosservice}">Nos services</a></li>
+                                        <li><a href="#" th:href="@{/tarifs}">Tarifs</a></li>
+                                        <li><a href="#" th:href="@{/benevolats}">Bénévolats</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" th:href="@{/demarche}">Démarches d'entrée </a>
+                                <li class="pull-right"><a href="#"  th:href="@{/login}" class=""><i class="fa fa-sign-in" aria-hidden="true"></i> <span>Login</span></a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Header -->
+
+<!-- Page Header -->
+<div class="page-header">
+    <div class="container">
+        <div class="row page-section">
+            <div class="col-md-8">
+                <h4><i>INFORMATIONS PRATIQUES</i></h4>
+                <h1><i> Démarches d'entrée </i></h1>
+            </div>
+            <div class="col-md-4">
+            <a href="#"  th:href="@{/nosservice}" class="btn btn-linegreen pull-right mt20 mr0">Voir nos services</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Page Header -->
+
+<!-- section -->
+<div class="career-section pt80 pb40">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h4 style="color: black;margin-left: 5%;">Intégrer une maison de retraite constitue souvent un vrai bouleversement pour la personne âgée. Une bonne préparation à cette nouvelle vie est souvent le gage d’une intégration réussie au sein de la résidence. C’est pourquoi Notre établissements, ASSIREM, proposent un parcours d’entrée en plusieurs étapes.</h4>           
+            </div>         
+        </div>
+        <div class="row mb50">
+            <div class="col-md-12" role="tablist">
+              <ul style="list-style: amharic; font-size: 3em;">
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                      <div class="row">
+                        <div class="col-md-10">                         
+                            <h1 style="font-size: 1.2em; color: black;" > Le parcours d'entrée : </h1>                       
+                          <span>             </span>                       
+                        </div>
+                      </div>
+                  </div>
+                  
+                  <div class="row text-justify">
+                    <div class="col-md-10">
+                      <li style="color:#C3AA39">
+                      <a role="button" class="panel-title career-heading collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="font-size: 0.8em; color: #000;">
+                      <i> Visite de la Résidence </i> </li>                     
+                      <span style="margin-left: 5%;">Pour vous faciliter la tâche, vous pouvez venir visiter notre établissement, avec ou sans le futur résident. Les visites s’effectuent sur rendez-vous.
+                        Notre équipe répondra avec plaisir à vos questions. Si vous le souhaitez, vous pouvez rester déjeuner dans le restaurant des familles. 
+                        Si vous ne pouvez pas vous rendre sur place, nous pouvons venir à vous et vous faire découvrir notre maison de retraite avec des diaporamas ou à l'aide d'une visite virtuelle. 
+                        Si vous êtes intéressé, nous vous enverrons ensuite un dossier de pré-admission avec les différents documents de présentation de notre établissement (plaquette, journal interne, etc.).
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                
+                </div>                
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                     
+                    <div class="row">
+                        <div class="col-md-10">
+                          <li style="color:#C3AA39">
+                          <a style="font-size: 0.8em; color: #000;" role="button" class="panel-title career-heading collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          <i> Dépôt du dossier d’admission </i></li>                      
+                          <span style="margin-left: 5%;">Puis, vous devrez remplir le dossier d’admission qui comprend trois parties :
+                             <strong>le volet administratif</strong> (à remplir par vos soins), <strong>les justificatifs de ressources</strong> 
+                             et <strong>le volet médical</strong>
+                             (à faire remplir par un médecin). <br>
+                             Le dossier médical est très important : il permet au médecin coordonnateur de s’assurer 
+                             de la bonne adéquation entre les souhaits du résident et de ses proches, ses capacités
+                              physiques et cognitives et le projet de l’établissement avant de formuler un avis médical.il permettra ainsi au personnel medicals de savoir les différentes soins medicaux et les medicaments que le résident prend.</span>
+                          </a>
+                        </li>
+                        </div>
+
+                      </div>
+                    
+                  </div>
+
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingThree">
+                      <div class="row">
+                        <div class="col-md-10">
+                          <li style="color:#C3AA39">
+                          <a style="font-size: 0.8em; color: #000;" role="button" class="panel-title career-heading collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          <i>Rendez-vous de préadmission </i> </li>                      
+                          <span style="margin-left: 5%;"> Si le premier avis est favorable, nous vous proposons un rendez-vous 
+                            de pré-admission au sein de notre résidence ASSIREM. Vous pourrez faire 
+                            connaissance avec nos équipes et visiter notamment la future chambre du résident. 
+                            Nous pourrons aborder le projet 
+                            de vie de votre proche ensemble. Vous pourrez nous exprimer vos attentes et interrogations.</span>
+                          </a>
+                        </div>
+
+                      </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingFour">
+                      <div class="row">
+                        <div class="col-md-10">
+                          <li style="color:#C3AA39">
+                          <a style="font-size: 0.8em; color: #000;" role="button" class="panel-title career-heading collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <i>Rendez-vous administratif </i>
+                        </li>                       
+                          <span style="margin-left: 5%;">Pour constituer le dossier d’entrée, nous ferons le point ensemble sur les pièces 
+                            administratives à fournir, le contrat de séjour et les annexes à signer, 
+                            à la résidence ou par mail.</span>
+                          </a>
+
+                        </div>
+                      </div>
+                  </div>
+
+                </div>   
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingFour">
+                      <div class="row">
+                        <div class="col-md-10">
+                          <li style="color:#C3AA39">
+                          <a style="font-size: 0.8em; color: #000;" role="button" class="panel-title career-heading collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <i> Arrivée à la Résidence  </i> 
+                        </li>                     
+                          <span style="margin-left: 5%;">Le résident et ses proches sont accueillis par l’opératrice habilitée, 
+                            qui veillera à la bonne installation de la personne âgée. Nos équipes mettent tout en 
+                            œuvre pour que l'arrivée se passe dans des conditions optimales de bien-être et de 
+                            sérénité. C'est pourquoi les familles sont invitées à venir partager un déjeuner pour 
+                            participer à l’intégration de leur proche.</span>
+                          </a>
+                        
+                        </div>
+                      </div>
+                  </div>
+
+                </div>   
+              </ul>                                                     
+             </div>
+        </div>         
+    </div>
+</div>
+<!-- /  -section -->
+
+<!-- -section -->
+<div id="career-slider" class="career-slider">
+  <div class="item"><img src="images/home.jpg" class="" alt="" /></div>    
+  <div class="item"><img src="images/image2.jpg" class="" alt="" /></div>  
+  <div class="item"><img src="images/reading.PNG" class="" alt="" /></div> 
+  <div class="item"><img src="images/maison.jpg" class="" alt="" /></div>  
+</div>
+<!-- /  -section -->
+
+<div class="mb80">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+          <h1 style="text-align: center;color:#C3AA39" >Le jour de l’entrée en maison de retraite, prendre le temps d’avoir de nouveaux repères:</h1>
+          <p style="color:#000" style="margin-left: 5%;">Votre chambre en ASSIREM va devenir votre nouveau « chez vous », il sera important de l’équiper avec vos meubles et vos objets personnels pour créer une atmosphère rassurante, confortable et familière.<br>
+            Les membres de l’équipe vous accompagneront et seront à votre disposition pour vous aider à définir les modalités du quotidien : vos habitudes, vos nouvelles attentes, etc.<br>
+            Il est important de rassurer la personne âgée, calmer son inquiétude et apaiser ses réactions souvent amplifiées les premiers jours en organisant par exemple des visites régulières de sa future maison de retraite à une fréquence raisonnable. .<br>
+            Conscient de la déstabilisation qu’un nouveau cadre de vie peut engendrer, le Groupe ASSIREM accompagne chaque résident senior en prenant en compte son histoire de vie, ses désirs et ses attentes dans le cadre d’un projet personnalisé d’accompagnement. Ce projet se construit avec l’ensemble du personnel et le résident en accord avec son état de santé, dans le respect de sa personne, de sa dignité et de ses droits. .<br>
+            </p>
+          
+        </div>
+    </div>
+  </div>        
+</div>  
+
+
+<!-- Footer-section -->
+<div class="footer-section">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-3">
+              <div class="footer-contact-box">
+              <h2>Contactez Nous</h2>
+              <div class="contact-icon">
+                  <i class="icon-location-pin icons"></i>
+                  <p>23 Boulevard de France, 91000 Évry</p>
+              </div>
+              <div class="contact-icon">
+                  <i class="icon-envelope icons"></i>
+                  <p>info@maison_retraire.com</p>
+              </div>
+              <div class="contact-icon">
+                  <i class="icon-call-out icons"></i>
+                  <p>0193950000</p>
+              </div>                
+             <div class="footer-social-box">
+                                  <ul>
+                                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                  </ul></div>
+             
+                                             
+              </div>
+          </div>
+          <div class="col-md-offset-1 col-md-3">
+              <div class="footer-widget">
+              <h2>Navigation</h2>
+              <ul class="listnone bullet-arrow-right footer-ul footer-menu" sty>
+              <li><a href="#">Accueil</a></li>
+              <li><a href="#">Nos engagements</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Log In</a></li>
+              <li><a href="#">Démarches d'entrée</a></li>
+              </ul>
+              </div>
+
+          </div>
+          <div class="col-md-3">
+              <div class="footer-widget">
+              <h2><i> Heures de travail :</i></h2>
+              <ul class="listnone footer-ul" style="color: #FFF;">
+              <li>Lundi - Vendredi</li>
+              <li>: <strong>8.00 - 16.00</strong></li>
+              <li>Samedi</li>
+              <li>: <strong>9.30 - 12.00</strong></li>
+              <li>Dimanche</li>
+              <li>: <strong>9.30 - 10.30</strong></li>
+              </ul>
+              </div>                
+          </div>
+          <div class="col-md-2">
+              <div class="footer-widget">
+
+              </div>                
+          </div>           
+
+      </div>
+  </div>
+</div>
+<!-- /Footer-section -->
+
+<!-- Tiny-footer Section -->
+<div class="tiny-footer-section">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-offset-4 col-md-6">
+              <div class="tiny-footer-copyright">Copyright 2016 @ASSIREM Tous les droits réservées</div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- /Tiny Footer-section -->
+<!-- jquery -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/theme.js"></script> 
+<script type="text/javascript" src="js/menumaker.js"></script> 
+<!-- end  jquery -->
+</body>
+
+
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+<title> ASSIREM : Résidence  &amp; Maison de Retraite Médicalisée </title>
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="Maisons de retraite pour personnes âgées" />
+<meta name="keywords" content="Assirem, Maison, Medicalisé, Maisons de retraite ">
+<meta name="author" content="Naoual & Fatma" />
+<meta name="MobileOptimized" content="320" />
+<!-- favicon-icon -->
+<link rel="icon" type="image/icon" href="images/favicon/favicon.ico">
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Menu marker CSS -->
+<link href="css/fontello.css" rel="stylesheet">
+<!--  fonts -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,800" rel="stylesheet">
+<!-- Font Awesome CSS -->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!-- Font simple-line-icons CSS -->
+<link href="css/simple-line-icons.css" rel="stylesheet">
+<!-- Font Custom  CSS -->
+<link href="css/menumaker.css" rel="stylesheet">
+<!-- OWL CSS -->
+<link href="css/owl.carousel.css" rel="stylesheet">
+<!--  Style CSS -->
+<link href="css/style.css" rel="stylesheet">
+<!-- Stucture CSS -->
+<link href="css/stucture.css" rel="stylesheet">
+
+</head>
+<!-- /end head -->
+
+<body>
+<!--  Topbar -->
+<div class="topbar">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-sm-5">
+        <p class="wel-msg">Bienvenu Chez ASSIREM | Maison de Retraite Médicalisée</p>
+      </div>
+      <div class="col-md-7 col-sm-7 hidden-xs">
+        <div class="topbar-contact"> <span class="topbar-email topbar-info"><a href="#"><i class="fa fa-envelope"></i>info@maison_retraire.com</a>
+            <span class="topbar-info" ><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>0193950000</a></span> 
+      </div>
+    </div>
+  </div>
+</div>    
+<!-- /Topbar -->
+
+    <!-- Header -->
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a style="width: 30%" class="navbar-brand" href="#"  th:href="@{/}"><img src="images/Assirem-logo.png" class="img-responsive" alt="Logo"></a> <strong style="color: black; line-height:300%; position: absolute; margin-left: 10%;font-size: 1.5em; "><i>ASSIREM</i></strong> <p style="color: black;"></div>
+                <div class="col-md-9">
+                    <div class="menu-box">
+                        <div id="navmenu">
+                            <ul>
+                                <li><a href="#" th:href="@{/index}">Accueil</a>  </li>
+                                <li><a href="#">Nos engagements</a>
+                                    <ul>
+                                        <li><a href="#" th:href="@{/expertise}">Expertise médicale</a></li>
+                                        <li><a href="#" th:href="@{/accompagnement}">Accompagnement <br><br>personnalisé</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Services</a>
+                                    <ul>
+                                        <li><a href="#" th:href="@{/nosservice}">Nos services</a></li>
+                                        <li><a href="#" th:href="@{/tarifs}">Tarifs</a></li>
+                                        <li><a href="#" th:href="@{/benevolats}">Bénévolats</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" th:href="@{/demarche}">Démarches d'entrée </a>
+                                <li class="pull-right"><a href="#"  th:href="@{/login}" class=""><i class="fa fa-sign-in" aria-hidden="true"></i> <span>Login</span></a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Header -->
+
+<!-- Banner Section -->
+<div class="banner-section">    
+    <!-- slider -->
+    <div class="slider">
+        <div class="item" style="background-image: url('images/pic1.jpg')">
+            <div class="overlay-home"></div>
+            <div class="slide-captions"><!-- slider-captions -->
+                <div class="container">
+                    <div class="slide-heading">Un accompagnement </div>
+                    <div class="slide-title">Pour tout vous besoin</div>
+                    <div class="mt50">
+                        <a href="#"  th:href="@{/login}" class="btn btn-linegreen" >Log In</a>
+                        <a href="#"  th:href="@{/demarche}" class="btn btn-linegreen" >Démarches d'entrée </a>
+                   </div>
+                </div>    
+            </div>        
+        </div>
+        <div class="item" style="background-image: url('images/pic2.jpg')">
+            <div class="overlay-home"></div>
+            <div class="slide-captions"><!-- slider-captions -->
+                <div class="container">
+                    <div class="slide-heading">Comme à la maison</div>
+                    <div class="slide-title">Et mieux encore! </div>
+                    <div class="mt50">
+                        <a href="#"  th:href="@{/login}" class="btn btn-linegreen" >Log In</a>
+                        <a href="#"  th:href="@{/demarche}" class="btn btn-linegreen" >Démarches d'entrée </a>
+                    </div>
+                 </div>   
+            </div>      
+        </div> 
+        <div class="item" style="background-image: url('images/pic3.jpg')">
+            <div class="overlay-home"></div>
+            <div class="slide-captions"><!-- slider-captions -->
+                <div class="container">
+                    <div class="slide-heading">Ici vous êtes libres</div>
+                    <div class="slide-title">d'être vous-même! </div>
+                    <div class="mt50">
+                        <a href="#"  th:href="@{/login}" class="btn btn-linegreen" >Log In</a>
+                        <a href="#"  th:href="@{/demarche}" class="btn btn-linegreen" >Démarches d'entrée </a>
+                    </div>
+                 </div>   
+            </div>      
+        </div> 
+    </div>
+    
+    
+    <!-- /specialities-block -->
+</div>
+<!-- / Banner Section -->
+
+
+
+<!-- Accompagnement  Section -->
+<div >
+    <div class="container">
+        <div class="row" style="padding-bottom: 5%; padding-top: 5%;">
+            <div class="col-md-offset-1 col-md-10">
+                <div class="about-whitebox">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="heading-title"><i>Accompagnement personnalisé, suivi médical et paramédical</i> </h1>
+                            <h4 class="sub-title mb30"></h4>
+                            <p>Sur place, notre équipe soignante pluridisciplinaire se charge de vous accompagner au quotidien selon vos besoins (aide à la toilette...), d’assurer la gestion de vos médicaments et de votre suivi médical (soins infirmiers...), en concertation avec vos intervenants extérieurs. Vous êtes libre du choix de votre médecin traitant et, de manière plus générale, de l’ensemble de vos intervenants extérieurs (kinésithérapeute, dentiste, pédicure…). 
+                                </p>
+                            
+                                <div class="text-center"> <p>   <BR> 
+                                
+                                </p> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+</div>
+
+<div class="cta-white ptb70">
+    <div class="container">
+        <div class="row" style="padding-top: 5%;">
+            <div class="col-md-12 text-center justify-text">
+                <h1 class="mb0">Notre mission commence</h1>
+                <h1 class="mb0" style="padding-bottom: 3%;">
+                    bien avant votre arrivée
+                </h1>
+                <p class="mb30">
+                    
+                        Pour vous proposer l’accueil le plus chaleureux et
+                         le plus adapté, nos professionnels travaillent en 
+                         amont avec vous et votre famille, afin de recueillir
+                          votre parcours médical mais aussi personnel. À votre
+                        demande, nous pouvons nous déplacer à votre domicile 
+                        afin de vous rencontrer dans votre environnement. <br> <br>
+                           C’est aussi l’occasion de commencer à échanger sur la
+                           mise en place de votre futur projet de vie personnalisé 
+                           au sein de la maison. Ainsi, dès votre entrée, nous vous
+                          connaissons et au fil du temps, vous apprenez à nous connaître.
+                    
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--  Section -->
+<div >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                                  
+            </div>
+        </div>
+        <div class="row dt-bottom">
+            <div class="col-md-12">
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="dr1">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="images/femmemng.PNG" class="img-responsive" alt="" />
+                            </div>
+                            <div class="col-md-8" style="background-color: f7f0f0;">
+                                <div >
+                                    <p>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        La résidence est dotée de chambres individuelles ou 
+                                        doubles, toutes pourvues d’une salle d’eau privative
+                                        et sécurisée. Pré-équipées d’un mobilier contemporain,
+                                        elles sont tout à fait personnalisables par leur occupant.
+                                        La résidence dispose également d’espaces communs agréables :
+                                        salons, bibliothèque, espace piano, terrasses ouvertes, etc. <br>
+                                        Des espaces de bien-être (salle Snoezelen, balnéothérapie,
+                                        salon de coiffure) sont à disposition des résidents.
+                                        <br>
+                                        Pour chaque unité de vie, on compte, le jour, deux ou trois soignants
+                                         en plus de la maîtresse de maison, et, la nuit, deux aides-soignantes 
+                                         et une auxiliaire de vie. <br>
+                                        
+                                    </p>                                  
+                                                                   
+                                </div>
+                            </div>                     
+                                                                     
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+           
+<!-- / Section -->
+<!--  Section -->
+<div class="ptb80 lightbg">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+              <div >
+                
+                    <div class="col-md-12 text-center" style="padding-left: 24%; padding-bottom: 5%;">
+                      <img class="bg_img img-responsive" src="images/ac.jpg" alt="">
+                      
+                    </div>
+                  
+                  <p style="padding-left: 5%;">
+                    En fonction du projet de vie qu’il aura établi avec ses proches 
+                    et l’équipe soignante, de ses besoins, de ses habitudes et de 
+                    ses envies, le résident peut participer à différentes animations 
+                    favorisant son bien-être et son autonomie, encourageant les contacts
+                     avec l’extérieur et sa vie sociale et culturelle. Activités physiques,
+                      culturelles, créatives et quotidiennes rythment ainsi les journées
+                       des résidents, ainsi que des sorties à l’extérieur.
+                  </p>
+                </div>  
+          </div>           
+        </div>
+    </div>
+</div>
+<!--/  Section -->
+<!--  Section -->
+<div class="why-choose-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="why-choose-box">
+                    <div class="why-icon-box">
+                        <i class="fa fa-building-o"></i>
+                    </div>
+                    <div class="why-choose-content">
+                        <div class="why-heading counter">450</div>
+                        <div class="why-sub-heading">Chambres</div>
+                    </div>                    
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="why-choose-box">
+                    <div class="why-icon-box">
+                        <i class="fa fa-patient-md"></i>
+                    </div>
+                    <div class="why-choose-content">
+                        <div class="why-heading counter">80</div>
+                        <div class="why-sub-heading">Médecins et infirmiéres </div>
+                    </div>                    
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="why-choose-box">
+                    <div class="why-icon-box">
+                        <i class="fa fa-trophy"></i>
+                    </div>
+                    <div class="why-choose-content">
+                        <div class="why-heading counter">15</div>
+                        <div class="why-sub-heading">Année d'expérience</div>
+                    </div>                    
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="why-choose-box">
+                    <div class="why-icon-box">
+                        <i class="fa fa-smile-o"></i>
+                    </div>
+                    <div class="why-choose-content">
+                        <div class="why-heading counter">3000</div>
+                        <div class="why-sub-heading" >Senoir heureux</div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- / Section -->
+
+
+
+
+<!-- Footer-section -->
+<div class="footer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="footer-contact-box">
+                <h2>Contactez Nous</h2>
+                <div class="contact-icon">
+                    <i class="icon-location-pin icons"></i>
+                    <p>23 Boulevard de France, 91000 Évry</p>
+                </div>
+                <div class="contact-icon">
+                    <i class="icon-envelope icons"></i>
+                    <p>info@maison_retraire.com</p>
+                </div>
+                <div class="contact-icon">
+                    <i class="icon-call-out icons"></i>
+                    <p>0193950000</p>
+                </div>                
+               <div class="footer-social-box">
+                                    <ul>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul></div>
+               
+                                               
+                </div>
+            </div>
+            <div class="col-md-offset-1 col-md-3">
+                <div class="footer-widget">
+                <h2>Navigation</h2>
+                <ul class="listnone bullet-arrow-right footer-ul footer-menu" sty>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Nos engagements</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Log In</a></li>
+                <li><a href="#">Démarches d'entrée</a></li>
+                </ul>
+                </div>
+  
+            </div>
+            <div class="col-md-3">
+                <div class="footer-widget">
+                <h2><i> Heures de travail :</i></h2>
+                <ul class="listnone footer-ul" style="color: #FFF;">
+                <li>Lundi - Vendredi</li>
+                <li>: <strong>8.00 - 16.00</strong></li>
+                <li>Samedi</li>
+                <li>: <strong>9.30 - 12.00</strong></li>
+                <li>Dimanche</li>
+                <li>: <strong>9.30 - 10.30</strong></li>
+                </ul>
+                </div>                
+            </div>
+            <div class="col-md-2">
+                <div class="footer-widget">
+  
+                </div>                
+            </div>           
+  
+        </div>
+    </div>
+  </div>
+  <!-- /Footer-section -->
+  
+  <!-- Tiny-footer Section -->
+  <div class="tiny-footer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-4 col-md-6">
+                <div class="tiny-footer-copyright">Copyright 2016 @ASSIREM Tous les droits réservées</div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- /Tiny Footer-section -->
+<!-- jquery -->
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/waypoints.min.js"></script> <!-- facts count js Required for jquery.counterup.js file -->
+<script type="text/javascript" src="js/jquery.counterup.js"></script>
+<script type="text/javascript" src="js/menumaker.js"></script> 
+<script type="text/javascript" src="js/theme.js"></script> 
+<!-- end  jquery -->
+</body>
+
+
+</html>

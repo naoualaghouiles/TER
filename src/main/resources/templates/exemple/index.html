@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <title>Docmed</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, patient-scalable=0">
+
+    <link href="assets/img/favicon.png" rel="icon">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/feather.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="account-page">
+
+<div class="main-wrapper">
+
+    <header class="header">
+        <nav class="navbar navbar-expand-lg header-nav">
+            <div class="navbar-header">
+                <a id="mobile_btn" href="javascript:void(0);">
+<span class="bar-icon">
+<span></span>
+<span></span>
+<span></span>
+</span>
+                </a>
+                <a href="/" th:href="@{/}" class="navbar-brand logo">
+                    <img src="assets/img/logo.png" class="img-fluid" alt="Logo">
+                </a>
+            </div>
+            <div class="main-menu-wrapper">
+                <div class="menu-header">
+                    <a href="/" th:href="@{/}" class="menu-logo">
+                        <img src="assets/img/logo.png" class="img-fluid" alt="Logo">
+                    </a>
+                    <a id="menu_close" class="menu-close" href="javascript:void(0);">
+                        <i class="fas fa-times"></i>
+                    </a>
+                </div>
+                <ul class="main-nav">
+                    <li class="has-submenu">
+                        <a href="/" th:href="@{/}">Acceuil </i></a>
+                        <ul class="submenu">
+
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">A propos </i></a>
+
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#"> <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li class="has-submenu">
+
+                            </li>
+                            <li><a href="#">Cardiologie</a></li>
+                            <li><a href="#">Neurologie</a></li>
+                            <li><a href="#">Orthopedie</a></li>
+                            <li><a href="#">Pédiatrie</a></li>
+                            <li><a href="#">Ophtalmologie</a></li>
+                            <li><a href="#">Dermatologie</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">Médecins <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">Cardiologues</a></li>
+                            <li><a href="#">Ophtalmologues</a></li>
+                            <li><a href="#">Dermatologues</a></li>
+                            <li><a href="#">Neurologues</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="has-submenu ">
+                        <a href="#">Services <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">Opérations</a></li>
+                            <li><a href="#">Tranfusion Sanguine</a></li>
+                            <li><a href="#">Réeducation</a></li>
+                            <li><a href="#">Imagerie</a></li>
+                            <li><a href="#">Laboratoires</a></li>
+                            <li><a href="#">Urgences</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">Contact</i></a>
+
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#" target="_blank">Besoin d'aide ? </i></a>
+
+                </ul>
+            </div>
+            <ul class="nav header-navbar-rht">
+                <li class="nav-item contact-item">
+                    <div class="header-contact-img">
+                    </div>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+
+                    <div class="account-content">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-md-7 col-lg-6 login-left">
+                                <img src="assets/img/login-banner.png" class="img-fluid" alt="Doccure Login">
+                            </div>
+                            <div class="col-md-12 col-lg-6 login-right">
+                                <div class="login-header">
+                                    <h3>Login success</h3>
+                                </div>
+                                <form th:action="@{/login}" method="post">
+
+                                    <!-- Error message -->
+                                    <div th:if="${param.error}">
+                                        <div class="alert alert-danger">Invalid username or password</div>
+                                    </div>
+
+                                    <!-- Logout message -->
+                                    <div th:if="${param.logout}">
+                                        <div class="alert alert-info">You have been logged out.</div>
+                                    </div>
+
+                                    <div class="form-group form-focus">
+                                        <input type="email" class="form-control floating" id="username" name="username">
+                                        <label class="focus-label"><i class="fas fa-envelope"></i> Email</label>
+                                    </div>
+                                    <div class="form-group form-focus">
+                                        <input type="password" class="form-control floating" id="password"
+                                               name="password">
+                                        <label class="focus-label"> <i class="fas fa-lock"></i> Mot de passe</label>
+                                    </div>
+                                    <input type="submit" name="login-submit" id="login-submit"
+                                           class="form-control btn btn-primary w-100 btn-lg login-btn"
+                                           value="Se connecter"/>
+                                    <!--                                    <button class="btn btn-primary w-100 btn-lg login-btn" type="submit">Se connecter-->
+                                    <!--                                    </button>-->
+                                    <div class="login-or">
+                                        <span class="or-line"></span>
+                                        <span class="span-or">ou</span>
+                                    </div>
+
+                                    <div class="text-center dont-have">Nouveau sur DocMed ? <a href="/"
+                                                                                               >S'inscrire</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+
+        <div class="footer-top">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+
+                        <div class="footer-widget footer-about">
+                            <div class="footer-logo">
+                                <h5 class="footer-title">DOCMED</h5>
+
+                            </div>
+                            <div class="footer-about-content">
+                                <p> Nous prenons soin de votre santé ! </p>
+                                <br><br><br>
+                                <div class="social-icon">
+                                    <ul>
+                                        <li>
+                                            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i> </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank"><i class="fab fa-twitter"></i> </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+
+                        <div class="footer-widget footer-menu">
+                            <h2 class="footer-title">Liens Rapides</h2>
+                            <ul>
+                                <li><a href="#">Acceuil</a></li>
+                                <li><a href="#">A propos</a></li>
+                                <li><a href="#">Départements</a></li>
+                                <li><a href="#">Médecins</a></li>
+                                <li><a href="#l">Services</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6">
+
+                        <div class="footer-widget footer-contact">
+                            <h2 class="footer-title">Contactez nous</h2>
+                            <div class="footer-contact-info">
+                                <div class="footer-address">
+                                    <span><i class="fas fa-map-marker-alt"></i></span>
+                                    <p> 6 Rue St Vincent de Paul, 75010 Paris, France </p>
+                                </div>
+                                <p>
+                                    <i class="fas fa-phone-alt"></i>
+                                    +33 191 316 524 </p>
+                                <p class="mb-0">
+                                    <i class="fas fa-envelope"></i>
+
+                                    contact@docmed.fr </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</div>
+
+</div>
+</div>
+
+
+
+</div>
+
+
+<!--<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>-->
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<script src="assets/js/feather.min.js"></script>
+
+<script src="assets/js/script.js"></script>
+</body>
+
+<!-- Mirrored from doccure-html.dreamguystech.com/template/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Jan 2022 12:51:27 GMT -->
+</html>

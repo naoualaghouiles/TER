@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title> ASSIREM : Résidence &amp; Maison de Retraite Médicalisée </title>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta name="description" content="Maisons de retraite pour personnes âgées"/>
+    <meta name="keywords" content="Assirem, Maison, Medicalisé, Maisons de retraite ">
+    <meta name="author" content="Naoual & Fatma"/>
+    <meta name="MobileOptimized" content="320"/>
+    <!-- favicon-icon -->
+    <link rel="icon" type="image/icon" href="images/favicon/favicon.ico">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Menu marker CSS -->
+    <link href="css/fontello.css" rel="stylesheet">
+    <!-- Template fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,800" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Font simple-line-icons CSS -->
+    <link href="css/simple-line-icons.css" rel="stylesheet">
+    <!-- Font Custom  CSS -->
+    <link href="css/menumaker.css" rel="stylesheet">
+    <!-- OWL CSS -->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <!-- Template Style CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Stucture CSS -->
+    <link href="css/stucture.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/login.css">
+    <title>connexion a mon espace </title>
+</head>
+<body>
+<div class="box">
+
+    <div id="preloader">
+        <div id="spinner">
+            <img alt="" src="images/preloaders/12.gif">
+        </div>
+
+    </div>
+    <div class="col-md-12 col-lg-12 ">
+        <strong style="color: white; line-height:300%; position: absolute; margin-left: 25%;font-size: 1.5em; "><i>ASSIREM</i></strong>
+        <a style="width: 90%" class="navbar-brand" href="#">
+            <img src="images/Assirem-logo.png" class="img-responsive" alt="Logo">
+        </a>
+    </div>
+    <div>
+        <h2>Login</h2>
+        <form method="POST" th:action="@{/login}">
+
+            <div class="form-group form-focus">
+                <label class="focus-label" style="color: white" for="username">E-mail</label>
+                <input type="email" class="form-control floating" style="background: white" id="username" name="username">
+
+            </div>
+            <div class="form-group form-focus">
+                <label class="focus-label" style="color: white" for="password">Mot de passe</label>
+                <input type="password" class="form-control floating" style="background: white" id="password" name="password">
+
+            </div>
+            <div CLASS="text-center">
+            <button class="btn btn-primary w-50 btn-lg login-btn" type="submit">Connexion</button>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+<!-- jQuery -->
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap Core JS -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script src="assets/js/script.js"></script>
+</body>
+</html>

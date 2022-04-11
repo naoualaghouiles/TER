@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title> ASSIREM : Résidence &amp; Maison de Retraite Médicalisée </title>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta name="description" content="Maisons de retraite pour personnes âgées"/>
+    <meta name="keywords" content="Assirem, Maison, Medicalisé, Maisons de retraite ">
+    <meta name="author" content="Naoual & Fatma"/>
+    <meta name="MobileOptimized" content="320"/>
+    <!-- favicon-icon -->
+    <link rel="icon" type="image/icon" href="images/favicon/favicon.ico">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Menu marker CSS -->
+    <link href="css/fontello.css" rel="stylesheet">
+    <!-- Template fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,800" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Font simple-line-icons CSS -->
+    <link href="css/simple-line-icons.css" rel="stylesheet">
+    <!-- Font Custom  CSS -->
+    <link href="css/menumaker.css" rel="stylesheet">
+    <!-- OWL CSS -->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <!-- Template Style CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Stucture CSS -->
+    <link href="css/stucture.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="css/stucture.css" rel="stylesheet">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+
+    <!-- Select2 CSS -->
+    <link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap-tagsinput/css/bootstrap-tagsinput.css">
+
+    <link rel="stylesheet" href="assets/plugins/dropzone/dropzone.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.min.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+<div class="topbar">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-sm-5">
+                <p class="wel-msg">Bienvenu Chez ASSIREM | Maison de Retraite Médicalisée</p>
+            </div>
+            <div class="col-md-7 col-sm-7 hidden-xs">
+                <div class="topbar-contact"> <span class="topbar-email topbar-info">
+						<a href="#"><i class="fa fa-envelope"></i>info@maison_retraire.com</a></span>
+                    <span class="topbar-info"><a href="#">
+							<i class="fa fa-phone" aria-hidden="true"></i>0193950000</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Topbar -->
+
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+        <!-- Header -->
+        <header class="header">
+            <nav class="navbar navbar-expand-lg header-nav"
+                 style="background:linear-gradient(to right, #16BFFD 0%, #CB3066  100%, #16BFFD  100%)">
+                <div class="navbar-header">
+
+
+                    <a style="width: 30%" class="navbar-brand" href="#" th:href="@{/}">
+                        <img src="images/Assirem-logo.png" class="img-responsive" alt="Logo" style="width: 200px">
+                        <strong style="color: black;  font-size: 1.5em; "><i>ASSIREM</i></strong>
+                    </a>
+
+                </div>
+                <ul class="nav header-navbar-rht">
+                    <!-- User Menu -->
+                    <li class="nav-item dropdown has-arrow logged-item">
+                        <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+								<span class="user-img">
+									<img class="rounded-circle" src="assets/img/user.png" width="31" alt="Eric Buckles">
+								</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <div class="user-header">
+                                <div class="avatar avatar-sm">
+                                    <img src="assets/img/user.png" alt="User Image" class="avatar-img rounded-circle">
+                                </div>
+                                <div class="user-text">
+                                    <label>naw aghouiles</label>
+                                </div>
+                            </div>
+
+                            <a class="dropdown-item" href="doctor-profile-settings.html">Edit Profil</a>
+                            <a class="dropdown-item" href="#" th:href="@{/login}">Logout</a>
+                        </div>
+                    </li>
+                    <!-- /User Menu -->
+                </ul>
+            </nav>
+        </header>
+        <!-- /Header -->
+
+        <!-- Breadcrumb -->
+        <div class="breadcrumb-bar">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-12 col-12">
+                        <nav aria-label="breadcrumb" class="page-breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">List Des Opératrices</li>
+                                <li class="breadcrumb-item active" aria-current="page">Ajout</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Breadcrumb -->
+
+        <!-- Page Content -->
+        <div class="content">
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar">
+
+                        <!-- Profile Sidebar -->
+                        <div class="profile-sidebar">
+                            <div class="widget-profile pro-widget-content">
+                                <div class="profile-info-widget">
+                                </div>
+                            </div>
+                            <div class="dashboard-widget">
+                                <nav class="dashboard-menu">
+                                    <ul>
+
+                                        <li>
+                                            <a href="#" th:href="@{/lister}">
+                                                <i class="fas fa-user-injured"></i>
+                                                <span>Liste des patients</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" th:href="@{/listeParent}">
+                                                <i class="fas fa-users"></i>
+                                                <span>Liste des Parents</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" th:href="@{/listeInfermiere}">
+                                                <i class="fa fa-user-md"></i>
+                                                <span>Liste des Infermieres</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" th:href="@{/listeOperatrice}">
+                                                <i class="fas fa-user-friends"></i>
+                                                <span>Liste des Operatrices</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" th:href="@{/listeAdmins}">
+                                                <i class="fas fa-user-cog"></i>
+                                                <span>Liste des Admins</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" th:href="@{/directeurL}">
+                                                <i class="fas fa-user-tie"></i>
+                                                <span>Ajouter Directeur</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" th:href="@{/repas}">
+                                                <i class="fa fa-leaf" aria-hidden="true" style="color: #0ce0ff"></i>
+                                                <span style="color: #0ce0ff">Repas</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" th:href="@{/listeActivities}">
+                                                <i class='fas fa-grin-stars'></i>
+                                                <span>Activities</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" th:href="@{/listePrestation}">
+                                                <i class="fas fa-star"></i>
+                                                <span>Prestations</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" th:href="@{/login}">
+                                                <i class="fas fa-sign-out-alt"></i>
+                                                <span>Logout</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <!-- /Profile Sidebar -->
+
+                    </div>
+                    <div class="col-md-7 col-lg-8 col-xl-9">
+
+                        <div th:if="${param.invalid}">
+                            <div class="alert alert-danger"> Erreure d'ajout !</div>
+                        </div>
+                        <!-- Basic Information -->
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title" style="font-size:32px; font-family: 'Niagara Solid'">Information
+                                    Personnel</h4>
+                                <form method="post" th:action="@{/ajoutRepas}" th:object="${ajoutRepasDto}" enctype="multipart/form-data">
+                                    <div class="row form-row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Designation <span class="text-danger">*</span></label>
+                                                <input type="text" class="form-control"
+                                                       th:field="*{designation}" required="required">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="fileU">Photo <span class="text-danger">*</span></label>
+                                                <input type="file" id="fileU"
+                                                       name="image" accept="image/png, image/jpeg"
+                                                       required="required">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="submit-section submit-btn-bottom" style="padding-top: 5%">
+                                        <button type="submit" class="btn btn-primary submit-btn" >Ajouter</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- /Basic Information -->
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- /Page Content -->
+
+
+        <!-- Tiny-footer Section -->
+        <div class="tiny-footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-4 col-md-6">
+                        <div class="tiny-footer-copyright">Copyright 2016 @ASSIREM Tous les droits réservées</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Tiny Footer-section -->
+
+    </div>
+    <!-- /Main Wrapper -->
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap Core JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Sticky Sidebar JS -->
+    <script src="assets/plugins/theia-sticky-sidebar/ResizeSensor.js"></script>
+    <script src="assets/plugins/theia-sticky-sidebar/theia-sticky-sidebar.js"></script>
+
+    <!-- Select2 JS -->
+    <script src="assets/plugins/select2/js/select2.min.js"></script>
+
+    <!-- Dropzone JS -->
+    <script src="assets/plugins/dropzone/dropzone.min.js"></script>
+
+    <!-- Bootstrap Tagsinput JS -->
+    <script src="assets/plugins/bootstrap-tagsinput/js/bootstrap-tagsinput.js"></script>
+
+    <!-- Profile Settings JS -->
+    <script src="assets/js/profile-settings.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.datepicker').datepicker();
+        } );
+        </script>
+</body>
+</html>

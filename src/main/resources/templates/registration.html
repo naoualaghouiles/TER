@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title> ASSIREM : Résidence &amp; Maison de Retraite Médicalisée </title>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta name="description" content="Maisons de retraite pour personnes âgées"/>
+    <meta name="keywords" content="Assirem, Maison, Medicalisé, Maisons de retraite ">
+    <meta name="author" content="Naoual & Fatma"/>
+    <meta name="MobileOptimized" content="320"/>
+    <!-- favicon-icon -->
+    <link rel="icon" type="image/icon" href="images/favicon/favicon.ico">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Menu marker CSS -->
+    <link href="css/fontello.css" rel="stylesheet">
+    <!-- Template fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,800" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Font simple-line-icons CSS -->
+    <link href="css/simple-line-icons.css" rel="stylesheet">
+    <!-- Font Custom  CSS -->
+    <link href="css/menumaker.css" rel="stylesheet">
+    <!-- OWL CSS -->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <!-- Template Style CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Stucture CSS -->
+    <link href="css/stucture.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/login.css">
+    <title>connexion a mon espace </title>
+</head>
+<body>
+<div class="box">
+    <div class="col-md-12 col-lg-12 ">
+        <strong style="color: white; line-height:300%; position: absolute; margin-left: 25%;font-size: 1.5em; "><i>ASSIREM</i></strong>
+        <a style="width: 90%" class="navbar-brand" href="#">
+            <img src="images/Assirem-logo.png" class="img-responsive" alt="Logo">
+        </a>
+    </div>
+    <div>
+        <div th:if="${param.success}">
+            <div class="alert alert-success">Success !</div>
+        </div>
+        <h2>Login</h2>
+        <form method="POST" th:action="@{/inscription}" th:object="${patient}">
+
+            <div>
+                <label for="nom">Nom</label>
+                <input type="text" required="" id="nom" th:field="*{nom}">
+
+            </div>
+
+            <div>
+                <label for="prenom">Prenom</label>
+                <input type="text" required="" id="prenom" th:field="*{prenom}">
+
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="text" required="" id="email" th:field="*{email}">
+
+            </div>
+
+            <div>
+                <label for="password">Mot de passe</label>
+                <input type="password" required=""  id="password" th:field="*{password}">
+
+
+            </div>
+            <input type="submit" name="validation" value="connexion">
+
+
+        </form>
+
+    </div>
+</div>
+</body>
+</html>

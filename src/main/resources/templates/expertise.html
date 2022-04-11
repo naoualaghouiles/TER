@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!-- head -->
+
+<head>
+<title> ASSIREM : Résidence  &amp; Maison de Retraite Médicalisée </title>
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="Maisons de retraite pour personnes âgées" />
+<meta name="keywords" content="Assirem, Maison, Medicalisé, Maisons de retraite ">
+<meta name="author" content="Naoual & Fatma" />
+<meta name="MobileOptimized" content="320" />
+<!-- favicon-icon -->
+<link rel="icon" type="image/icon" href="images/favicon/favicon.ico">
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Menu marker CSS -->
+<link href="css/fontello.css" rel="stylesheet">
+<!--  fonts -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,800" rel="stylesheet">
+<!-- Font Awesome CSS -->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!-- Font simple-line-icons CSS -->
+<link href="css/simple-line-icons.css" rel="stylesheet">
+<!-- Font Custom  CSS -->
+<link href="css/menumaker.css" rel="stylesheet">
+<!-- OWL CSS -->
+<link href="css/owl.carousel.css" rel="stylesheet">
+<!--  Style CSS -->
+<link href="css/style.css" rel="stylesheet">
+<!-- Stucture CSS -->
+<link href="css/stucture.css" rel="stylesheet">
+
+</head>
+<!-- /end head -->
+
+<body>
+<!--  Topbar -->
+<div class="topbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 col-sm-5">
+          <p class="wel-msg">Bienvenu Chez ASSIREM | Maison de Retraite Médicalisée</p>
+        </div>
+        <div class="col-md-7 col-sm-7 hidden-xs">
+          <div class="topbar-contact"> <span class="topbar-email topbar-info"><a href="#"><i class="fa fa-envelope"></i>info@maison_retraire.com</a>
+              <span class="topbar-info" ><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>0193950000</a></span> 
+        </div>
+      </div>
+    </div>
+  </div>    
+  <!-- /Topbar -->
+
+    <!-- Header -->
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a style="width: 30%" class="navbar-brand" hhref="#"  th:href="@{/}"><img src="images/Assirem-logo.png" class="img-responsive" alt="Logo"></a> <strong style="color: black; line-height:300%; position: absolute; margin-left: 10%;font-size: 1.5em; "><i>ASSIREM</i></strong> <p style="color: black;"></div>
+                <div class="col-md-9">
+                    <div class="menu-box">
+                        <div id="navmenu">
+                            <ul>
+                                <li><a href="#" th:href="@{/index}">Accueil</a>  </li>
+                                <li><a href="#">Nos engagements</a>
+                                    <ul>
+                                        <li><a href="#" th:href="@{/expertise}">Expertise médicale</a></li>
+                                        <li><a href="#" th:href="@{/accompagnement}">Accompagnement <br><br>personnalisé</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Services</a>
+                                    <ul>
+                                        <li><a href="#" th:href="@{/nosservice}">Nos services</a></li>
+                                        <li><a href="#" th:href="@{/tarifs}">Tarifs</a></li>
+                                        <li><a href="#" th:href="@{/benevolats}">Bénévolats</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" th:href="@{/demarche}">Démarches d'entrée </a>
+                                <li class="pull-right"><a href="#"  th:href="@{/login}" class=""><i class="fa fa-sign-in" aria-hidden="true"></i> <span>Login</span></a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Header -->
+
+<!-- Page Header -->
+<div class="page-header">
+    <div class="container">
+        <div class="row page-section">
+            <div class="col-md-8">
+               
+            </div>
+            <div class="col-md-4">
+            <a href="#" class="btn btn-linegreen pull-right mt20 mr0">Expertise médicale</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Page Header -->
+
+<!-- section -->
+<div class="about-us-section ptb80">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 justify-text">
+                <br>
+                
+                <P>
+                    La gériatrie est une discipline médicale qui appréhende
+                     la personne âgée dans sa globalité médico-psycho-sociale
+                      : <strong>« On vieillit comme on a vécu »</strong>.
+                      <br>
+
+Soigner nos résidents est un devoir mais à cette étape de l’existence, 
+ les seniors recherchent avant tout des soins de confort et de la chaleur 
+ humaine. Il est donc important de traiter les maladies en fixant des priorités
+  en fonction des pathologies afin de leur libérer du temps
+                </P>
+                <div class="blockquote">
+                <p>
+                     Le respect de la liberté du résident et de ses choix 
+                    sont au cœur de nos préoccupations. Être à l’écoute, 
+                    solliciter sans imposer et s’adapter à sa personnalité
+                     sont les piliers Maisons de Famille pour apporter à 
+                     chaque résident les soins dont il a besoin 
+                </p>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <img src="images/table.png" class="img-responsive img-circle" alt="" />
+            </div>            
+        </div>
+    </div>
+</div>
+<!--  -section -->
+
+
+<div class="ptb80 lightbg">
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-12 col-md-12">
+              <h1 class="heading-title"></h1><h4 class="sub-title-normal"></h4>
+          </div>
+      </div>   
+        <div class="row">
+          <div class="col-md-6" style="background-color: f5EBEB;">
+              <div  style="background-color: f5EBEB;">
+                <div  style="background-color: f5EBEB;">
+
+                    <div >
+                      <img class="bg_img img-responsive" src="images/medical.jpg" alt="">
+                      
+                    </div>
+                    <p>
+                        <br>
+                         
+                        Le bilan de chaque résident est ensuite saisi dans notre logiciel de soins 
+                        permettant à l’ensemble des équipes un suivi personnalisé. 
+                    </p>
+                  </div>
+                </div>  
+          </div>
+          <div class="col-md-6">
+            <div  style="background-color: #f3eaea;">
+            <div >
+
+                <div class=" justify-text" >
+                  <p class="justify-text" >
+                    Dès votre arrivée dans nos maisons, un bilan de santé 
+                    est effectué par l’ensemble des équipes médicales et paramédicales :
+                    <ul>
+                        <li>le médecin coordonnateur,</li>
+                        <li>Le responsable de soins,</li>
+                        <li>l’infirmière cadre,</li>
+                        <li>les infirmières,</li>
+                        <li>les aides-soignantes,</li>
+                        <li>les psychomotriciens,</li>
+                        <li>les ergothérapeutes,</li>
+                        <li>Les Kinésithérapeutes,</li>
+                        <li>Les Podologues,</li>
+                        <li>L'Orthophoniste</li>
+                        <li>ou encore les psychologues.</li>
+                    </ul>
+                    <p class="justify-text">
+                    <i>Le médecin coordonnateur</i> et <i>le responsable de soins</i> travaillent main
+                     dans la main avec <i>les maîtresses de maison</i> soignantes-référentes pour
+                      offrir le meilleur suivi de soins possible aux résidents. Ils sont 
+                      épaulés par différents spécialistes libéraux. <i>Des infirmiers</i>  apportent également 
+                      les soins nécessaires aux personnes
+                        âgées, en veillant notamment au contrôle et à la distribution unitaire
+                         de médicaments.
+                        </p>
+                         
+
+                  </p>
+                </div>
+              </div>
+            </div>  
+        </div>            
+        </div>
+    </div>
+</div>
+
+
+<div>
+    <div class="container">
+        <div class="row" style="padding-left: 2%;">
+            <div class="col-lg-10 col-md-10">
+                <h1>
+                   <strong><i>Une prise en soins adaptée au résident</i></strong> </h1>
+                <p>
+                    
+                    Le parcours de soins médicaux mis en place par les équipes
+                     médicales de la Résidence Ger'Home prend en considération
+                      les pathologies de chaque résident. Ce parcours de soin
+                       individuel et personnalisé est établi avec le médecin 
+                       traitant ainsi que les médecins spécialisés et, si nécessaire,
+                        les hôpitaux des Hauts-de-Seine.  
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="container">
+        <div class="row" style="padding-left: 7%;padding-right: 7%;">
+            <div class="col-lg-12 col-md-12 text-center">
+                <br>
+                <br>
+                <br>
+                <h1 style="text-align: center;"><strong><i>Le grand âge et la vulnérabilité</i></strong> </h1>
+                <img class="bg_img img-responsive" src="images/sourire.PNG" alt="" style="width: 100%;">
+                <p>
+                    La gériatrie est une discipline médicale qui appréhende la personne
+                     âgée dans sa globalité médico-psycho-sociale :<br>
+                      <strong style="text-align: center;">« On vieillit comme 
+                        on a vécu »</strong>. <br>
+                     Soigner nos résidents est un devoir mais à cette étape de l’existence,
+                       les seniors recherchent avant tout des soins de confort et de la chaleur
+                        humaine. Il est donc important de traiter les maladies en fixant des
+                         priorités en fonction des pathologies afin de leur libérer du temps.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="cta-white ptb70">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="mb0">bien vieillir</h1>
+                <p class="mb30">Soucieuses de valoriser le rôle des familles 
+                    et des proches dans l’accompagnement des personnes âgées 
+                    en perte d’autonomie, les équipes des maisons de retraite
+                     ASSIREM s’attachent à proposer <strong>informations et conseils aux
+                        familles des résidents</strong>, mais aussi et plus largement à tous
+                       les aidants familiaux de personnes âgées vivant dans la commune. <br>
+
+                    <strong>Notre objectif :</strong> aider les familles à <strong>accompagner au mieux leurs parents</strong>, 
+                    les aider à comprendre leur pathologie (notamment lorsqu’il s’agit
+                     de maladies neurodégénératives de type Alzheimer), mais aussi <strong>
+                        contribuer
+                        plus globalement au bien vieillir
+                     </strong>.</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer-section -->
+<div class="footer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="footer-contact-box">
+                <h2>Contactez Nous</h2>
+                <div class="contact-icon">
+                    <i class="icon-location-pin icons"></i>
+                    <p>23 Boulevard de France, 91000 Évry</p>
+                </div>
+                <div class="contact-icon">
+                    <i class="icon-envelope icons"></i>
+                    <p>info@maison_retraire.com</p>
+                </div>
+                <div class="contact-icon">
+                    <i class="icon-call-out icons"></i>
+                    <p>0193950000</p>
+                </div>                
+               <div class="footer-social-box">
+                                    <ul>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul></div>
+               
+                                               
+                </div>
+            </div>
+            <div class="col-md-offset-1 col-md-3">
+                <div class="footer-widget">
+                <h2>Navigation</h2>
+                <ul class="listnone bullet-arrow-right footer-ul footer-menu" sty>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Nos engagements</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Log In</a></li>
+                <li><a href="#">Démarches d'entrée</a></li>
+                </ul>
+                </div>
+  
+            </div>
+            <div class="col-md-3">
+                <div class="footer-widget">
+                <h2><i> Heures de travail :</i></h2>
+                <ul class="listnone footer-ul" style="color: #FFF;">
+                <li>Lundi - Vendredi</li>
+                <li>: <strong>8.00 - 16.00</strong></li>
+                <li>Samedi</li>
+                <li>: <strong>9.30 - 12.00</strong></li>
+                <li>Dimanche</li>
+                <li>: <strong>9.30 - 10.30</strong></li>
+                </ul>
+                </div>                
+            </div>
+            <div class="col-md-2">
+                <div class="footer-widget">
+  
+                </div>                
+            </div>           
+  
+        </div>
+    </div>
+  </div>
+  <!-- /Footer-section -->
+  
+  <!-- Tiny-footer Section -->
+  <div class="tiny-footer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-4 col-md-6">
+                <div class="tiny-footer-copyright">Copyright 2016 @ASSIREM Tous les droits réservées</div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- /Tiny Footer-section -->
+<!-- jquery -->
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/menumaker.js"></script> 
+<script type="text/javascript" src="js/theme.js"></script> 
+<!-- end  jquery -->
+</body>
+
+
+</html>

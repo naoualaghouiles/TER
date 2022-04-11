@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+
+
+
+<head>
+<title>ASSIREM : Résidence  &amp; Maison de Retraite Médicalisée </title>
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="Maisons de retraite pour personnes âgées" />
+<meta name="keywords" content="Assirem, Maison, Medicalisé, Maisons de retraite">
+<meta name="author" content="Naoual & Fatma" />
+<meta name="MobileOptimized" content="320" />
+<!-- favicon-icon -->
+<link rel="icon" type="image/icon" href="images/favicon/favicon.ico">
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Menu marker CSS -->
+<link href="css/fontello.css" rel="stylesheet">
+<!-- fonts -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,800" rel="stylesheet">
+<!-- Font Awesome CSS -->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!-- Font simple-line-icons CSS -->
+<link href="css/simple-line-icons.css" rel="stylesheet">
+<!-- Font Custom  CSS -->
+<link href="css/menumaker.css" rel="stylesheet">
+<!-- OWL CSS -->
+<link href="css/owl.carousel.css" rel="stylesheet">
+<!--  Style CSS -->
+<link href="css/style.css" rel="stylesheet">
+<!-- Stucture CSS -->
+<link href="css/stucture.css" rel="stylesheet">
+</head>
+<!-- /end head -->
+
+<body>
+<!--  Topbar -->
+<div class="topbar">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-sm-5">
+        <p class="wel-msg">Bienvenu Chez ASSIREM | Maison de Retraite Médicalisée</p>
+      </div>
+      <div class="col-md-7 col-sm-7 hidden-xs">
+        <div class="topbar-contact"> <span class="topbar-email topbar-info"><a href="#"><i class="fa fa-envelope"></i>info@maison_retraire.com</a>
+            <span class="topbar-info" ><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>0193950000</a></span> 
+      </div>
+    </div>
+  </div>
+</div>    
+<!-- /Topbar -->
+
+    <!-- Header -->
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a style="width: 30%" class="navbar-brand" href="#"  th:href="@{/}"><img src="images/Assirem-logo.png" class="img-responsive" alt="Logo"></a> <strong style="color: black; line-height:300%; position: absolute; margin-left: 10%;font-size: 1.5em; "><i>ASSIREM</i></strong> <p style="color: black;"></div>
+                <div class="col-md-9">
+                    <div class="menu-box">
+                        <div id="navmenu">
+                            <ul>
+                                <li><a href="#" th:href="@{/index}">Accueil</a>  </li>
+                                <li><a href="#">Nos engagements</a>
+                                    <ul>
+                                        <li><a href="#" th:href="@{/expertise}">Expertise médicale</a></li>
+                                        <li><a href="#" th:href="@{/accompagnement}">Accompagnement <br><br>personnalisé</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Services</a>
+                                    <ul>
+                                        <li><a href="#" th:href="@{/nosservice}">Nos services</a></li>
+                                        <li><a href="#" th:href="@{/tarifs}">Tarifs</a></li>
+                                        <li><a href="#" th:href="@{/benevolats}">Bénévolats</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" th:href="@{/demarche}">Démarches d'entrée </a>
+                                <li class="pull-right"><a href="#"  th:href="@{/login}" class=""><i class="fa fa-sign-in" aria-hidden="true"></i> <span>Login</span></a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Header -->
+
+<!-- Page Header -->
+<div class="page-header">
+    <div class="container">
+        <div class="row page-section">
+            <div class="col-md-8">
+                
+            </div>
+            <div class="col-md-4">
+            <a href="#" class="btn btn-linegreen pull-right mt20 mr0">Bénévolat</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Page Header -->
+
+<div class="ptb80">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <h1 class="heading-title justify-content-center">"Plus qu’un travail, c’est pour moi une vocation de prendre soin de nos séniors"</h1><h4 class="sub-title-normal">Notre équipe</h4>
+                <img src="images/crew.jpg" class="img-responsive mb40" alt="Service" />
+
+                <p class="mb50">Etre <strong>bénévole</strong> à ASSIREM, c’est se rendre disponible et mettre
+                   ses compétences au service des personnes âgées et handicapées que nous accompagnons : 
+
+                  <strong>assurer une présence bienveillante en résidence</strong>, 
+                  auprès des personnes isolées
+                  <ul>
+                    <li>Rendre visite aux personnes hospitalisées,</li>
+                    <li>Participer aux activités de loisirs, culturelles ou autres (lire, jouer, se promener),</li>
+                    <li>Participer aux sorties, individuelles ou en groupe,</li>
+                    <li>Accompagner une personne âgée lors d’un déplacement ou pour un rendez-vous,</li>
+                    <li>Apporter une écoute aux résidents,</li>
+                    <li>...</li>
+                  </ul>
+                  Proposer de nouvelles activités…
+                </p>
+                  
+                <div class="row">
+                   <div class="col-lg-7 col-md-7">
+                      <div class="blockquote mb50">
+                      <p>
+                        Le bénévole a <strong>une place entière</strong> dans notre projet de bien vieillir
+                         ensemble;
+                         il ne remplace personne (ni les professionnels, ni les proches) mais
+                          il est <strong>irremplaçable</strong> pour la réalisation du projet
+                           commun.
+                          <br>
+                          Le bénévolat est source de <strong> joie</strong>, car il apporte du <strong>bonheur</strong>
+                          , de <strong>la tendresse</strong> à l’autre :
+                           un sourire qui fait <strong>chaud au cœur</strong>. <br>
+                          Il est <strong>apprécié</strong> des résidents et leurs proches comme des professionnels.
+                        </p>
+                      </div>
+                   </div>
+                   <div class="col-lg-5 col-md-5">
+                      <div class="service-details-inner">
+                        <img src="images/benevolat.jpg" class="img-responsive img-circle" alt="" />
+                      </div>
+                   </div> 
+                </div>
+                <p></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <hr class="mtb60">
+            </div>    
+            <div class="col-md-12 col-sm-12 text-center" style="padding-left: 150px;">
+                <div class="service-style-box">
+                    <a href="#"><img src="images/bnl.PNG" class="img-responsive " alt=""></a>
+                </div>
+                <hr class="mtb60">
+            </div>         
+        </div>                
+        <div class="row ">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12 ">
+                   <h3 style="color: black;"> Voici les différentes étapes que nous vous proposons pour nous rejoindre :</h3>
+                  <ul style="padding-left: 100px;padding-right: 100px;">
+      <li> <strong>1ère ETAPE :</strong>  Prenez contact avec l’animatrice de la résidence (à l’adresse email suivant : animatrice@maison_retraite.com).</li>
+      <li><strong>2ème ETAPE :</strong> Vous convenez avec l’animatrice d’un rendez-vous « découverte ».</li>
+      <li><strong>3ème ETAPE :</strong> Vous visitez la résidence et découvrez ses habitants, leurs attentes.</li>
+      <li><strong>4ème ETAPE :</strong> Vous prenez un temps de réflexion sur le projet qui vous a été présenté. En parallèle, vous êtes invité à participer à diverses activités réalisées en équipe au sein de la résidence.</li>
+    </ul>
+      <p> Une fois votre décision prise, la Charte des bénévoles vous est présentée et vous êtes invité à la signer pour manifester votre engagement. <br>
+      Nous vous remercions pour ce premier parcours de découverte et de rencontre et nous vous souhaitons un bénévolat fructueux au sein de notre Association.</p>
+      
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+</div>
+
+<!-- Footer-section -->
+<div class="footer-section">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-3">
+              <div class="footer-contact-box">
+              <h2>Contactez Nous</h2>
+              <div class="contact-icon">
+                  <i class="icon-location-pin icons"></i>
+                  <p>23 Boulevard de France, 91000 Évry</p>
+              </div>
+              <div class="contact-icon">
+                  <i class="icon-envelope icons"></i>
+                  <p>info@maison_retraire.com</p>
+              </div>
+              <div class="contact-icon">
+                  <i class="icon-call-out icons"></i>
+                  <p>0193950000</p>
+              </div>                
+             <div class="footer-social-box">
+                                  <ul>
+                                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                  </ul></div>
+             
+                                             
+              </div>
+          </div>
+          <div class="col-md-offset-1 col-md-3">
+              <div class="footer-widget">
+              <h2>Navigation</h2>
+              <ul class="listnone bullet-arrow-right footer-ul footer-menu" sty>
+              <li><a href="#">Accueil</a></li>
+              <li><a href="#">Nos engagements</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Log In</a></li>
+              <li><a href="#">Démarches d'entrée</a></li>
+              </ul>
+              </div>
+
+          </div>
+          <div class="col-md-3">
+              <div class="footer-widget">
+              <h2><i> Heures de travail :</i></h2>
+              <ul class="listnone footer-ul" style="color: #FFF;">
+              <li>Lundi - Vendredi</li>
+              <li>: <strong>8.00 - 16.00</strong></li>
+              <li>Samedi</li>
+              <li>: <strong>9.30 - 12.00</strong></li>
+              <li>Dimanche</li>
+              <li>: <strong>9.30 - 10.30</strong></li>
+              </ul>
+              </div>                
+          </div>
+          <div class="col-md-2">
+              <div class="footer-widget">
+
+              </div>                
+          </div>           
+
+      </div>
+  </div>
+</div>
+<!-- /Footer-section -->
+
+<!-- Tiny-footer Section -->
+<div class="tiny-footer-section">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-offset-4 col-md-6">
+              <div class="tiny-footer-copyright">Copyright 2016 @ASSIREM Tous les droits réservées</div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- /Tiny Footer-section -->
+
+<!-- jquery -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/menumaker.js"></script>
+<script type="text/javascript" src="js/theme.js"></script> 
+<!-- end  jquery -->
+</body>
+
+
+</html>

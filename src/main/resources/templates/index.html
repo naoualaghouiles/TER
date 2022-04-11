@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<title> ASSIREM : Résidence  &amp; Maison de Retraite Médicalisée </title>
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="Maisons de retraite pour personnes âgées" />
+<meta name="keywords" content="Assirem, Maison, Medicalisé, Maisons de retraite ">
+<meta name="author" content="Naoual & Fatma" />
+<meta name="MobileOptimized" content="320" />
+<!-- favicon-icon --><link rel="icon" type="image/icon" href="images/favicon/favicon.ico">
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Menu marker CSS -->
+<link href="css/fontello.css" rel="stylesheet">
+<!-- Template fonts -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,800" rel="stylesheet">
+<!-- Font Awesome CSS -->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!-- Font simple-line-icons CSS -->
+<link href="css/simple-line-icons.css" rel="stylesheet">
+<!-- Font Custom  CSS -->
+<link href="css/menumaker.css" rel="stylesheet">
+<!-- OWL CSS -->
+<link href="css/owl.carousel.css" rel="stylesheet">
+<!-- Template Style CSS -->
+<link href="css/style.css" rel="stylesheet">
+<!-- Stucture CSS -->
+<link href="css/stucture.css" rel="stylesheet">
+
+</head>
+<!-- /end head -->
+
+<body>
+<!--  Topbar -->
+<div class="topbar">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-sm-5">
+        <p class="wel-msg">Bienvenu Chez ASSIREM | Maison de Retraite Médicalisée</p>
+      </div>
+      <div class="col-md-7 col-sm-7 hidden-xs">
+          <div class="topbar-contact"> <span class="topbar-email topbar-info"><a href="#"><i class="fa fa-envelope"></i>info@maison_retraire.com</a></span>
+            <span class="topbar-info" ><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>0193950000</a></span> 
+      </div>
+    </div>
+  </div>
+</div>    
+<!-- /Topbar -->
+
+<!-- Header -->
+<div class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+            <a style="width: 30%" class="navbar-brand" href="#"  th:href="@{/}"><img src="images/Assirem-logo.png" class="img-responsive" alt="Logo"></a> <strong style="color: black; line-height:300%; position: absolute; margin-left: 10%;font-size: 1.5em; "><i>ASSIREM</i></strong> <p style="color: black;"></div>
+        <div class="col-md-9">
+          <div class="menu-box">
+            <div id="navmenu">
+              <ul>
+                  <li><a href="#" th:href="@{/index}">Accueil</a>  </li>
+                  <li><a href="#">Nos engagements</a>
+                      <ul>
+                        <li><a href="#" th:href="@{/expertise}">Expertise médicale</a></li>
+                        <li><a href="#" th:href="@{/accompagnement}">Accompagnement <br><br>personnalisé</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="#">Services</a>
+                      <ul>
+                        <li><a href="#" th:href="@{/nosservice}">Nos services</a></li>
+                        <li><a href="#" th:href="@{/tarifs}">Tarifs</a></li>
+                        <li><a href="#" th:href="@{/benevolats}">Bénévolats</a></li>
+                      </ul>
+                  </li>
+                <li><a href="#" th:href="@{/demarche}">Démarches d'entrée </a>
+                <li class="pull-right"><a href="#"  th:href="@{/login}" class=""><i class="fa fa-sign-in" aria-hidden="true"></i> <span>Login</span></a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Header -->
+
+<!-- Banner Section -->
+<div class="banner-section">    
+    <!-- slider -->
+    <div class="slider">
+        <div class="item" style="background-image: url('images/banner1.png')">
+            <div class="overlay-home"></div>
+            <div class="slide-captions"><!-- slider-captions -->
+                <div class="container">
+                    <div class="slide-title">Technologie avancée</div>
+                    <div class="slide-heading">Pour tout vous besoin</div>
+                    <div class="mt50">
+                        <a href="#" th:href="@{/login}" class="btn btn-linegreen" >Log In</a>
+                        <a href="#"  th:href="@{/nosservice}"class="btn btn-lineblue">Nos services</a>
+                   </div>
+                </div>    
+            </div>        
+        </div>
+        <div class="item" style="background-image: url('images/banner2.jpg')">
+            <div class="overlay-home"></div>
+            <div class="slide-captions"><!-- slider-captions -->
+                <div class="container">
+                    <div class="slide-title">Comme à la maison</div>
+                    <div class="slide-heading">venez visté avec vos proche et faire le bon choix</div>
+                    <div class="mt50">
+                        <a href="#" th:href="@{/login}" class="btn btn-linegreen" >Log In</a>
+                        <a href="#" th:href="@{/nosservice}" class="btn btn-lineblue">Services</a>
+                    </div>
+                 </div>   
+            </div>      
+        </div> 
+    </div>
+    
+    
+    <!-- /specialities-block -->
+</div>
+<!-- / Banner Section -->
+
+<!-- Testimonial Section -->
+<div class="testimonial-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-4 testimonial-arrow-right">
+                <div id="testimonial-thumb" class="owl-carousel">                    
+                </div>   
+            </div>
+            <div class="col-md-9 col-sm-8 justify-content-center">
+                <div id="testimonial-content" class="owl-carousel justify-content-center">                    
+                    <div class="projectitem text-center">
+                        <div class="testimonial-contact">
+                            <div class="testimonial-text">Conscient des évolutions de notre société, notre Groupe s’attache à faire évoluer son offre de services pour répondre aux besoins et attentes des personnes âgées, en fonction de leur parcours de vie.</div>
+                          
+                        </div>
+                    </div>
+                    <div class="projectitem">
+                        <div class="testimonial-contact">
+                            <div class="testimonial-text">Nous nous efforçons continuellement d’améliorer notre organisation et nos prestation pour un accompagnement personnalisé et adapté.</div>
+                         
+                        </div>
+                    </div>
+                    <div class="projectitem justify-content-center ">
+                        <div class="testimonial-contact ">
+                            <div class="testimonial-text">
+                                Les ressources humaines sont au cœur de notre métier. La professionnalisation des équipes, la qualité de vie au travail et la prévention des risques font partie intégrante de notre politique sociale.</div>
+                           
+                        </div>
+                    </div>                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- / Testimonial Section -->
+
+<div >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-3 col-md-6">
+                <img src="images/reading.PNG" class="img-responsive" alt="" >
+            </div>            
+        </div>
+        <div class="row">
+            <div class="col-md-offset-1 col-md-10">
+                <div class="about-whitebox">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="heading-title"><i>Sur Nous...</i> </h1>
+                            <h4 class="sub-title mb30"></h4>
+                            <p>Notre Maisons, ASSIREM, est un véritable lieu de vie à taille humaine conçus pour le <i>bien-être</i> des résidents.  <br> Qu’ils soient <i>seuls</i> ou <i>en couple</i>, ils bénéficient d’un <i>accompagnement personnalisé</i> de grande qualité.<br>
+                                On met également un point d’honneur à faciliter la vie des familles, à les <i>accueillir</i>, à <i>multiplier</i> les occasions de célébrer des événements et à communiquer en <i>totale transparence</i>.<br>
+                                <br> Notre équipe est heureuse de faire vivre <i>la noblesse</i> de leur mission : partager chaque jour avec les résidents dans <i>un cadre familial… comme à la maison</i>.
+                                </p>
+                            
+                                <div class="text-center"> <p>   <BR> 
+                                
+                                </p> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+</div>
+<!-- /About Section -->
+
+
+<div class="department-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="heading-title"></h1>
+                <h4 class="sub-title mb60">Spécial offre</h4>                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 department-inner-icon">
+                       
+                    </div>
+                    <div class="col-md-9 col-sm-9">
+                        <h2><a href="#"> Un appartement pour votre confort </a></h2>
+                        <p class="mb60">meubles et décoration au choix. C'est un appartement qui vous ressemble où vous avez plaisir à accueillir votre famille et vos amis.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 department-inner-icon">
+                        
+                    </div>
+                    <div class="col-md-9 col-sm-9">
+                        <h2><a href="#"> Des services sur mesure</a></h2>
+                        <p class="mb60">Cuisine, ménage, conciergerie, une large gamme de services à la carte ou packagés pour vous libérer des contraintes du quotidien.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 department-inner-icon">
+                        
+                    </div>
+                    <div class="col-md-9 col-sm-9">
+                        <h2><a href="#"> Une solution pour chaque budget</a></h2>
+                        <p class="mb60">Plusieurs prestation et services sont déjà inclus dans votre loyer. Selon vos besoins, vous pouvez ajouter d'autres services que vous souhaitez.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 department-inner-icon">
+                     
+                        
+                    </div>
+                    <div class="col-md-9 col-sm-9">
+                        <h2><a href="#"> Une équipe à votre écoute</a></h2>
+                        <p class="mb60">Soigneusement formée, l'équipe ASSIREM met son savoir-faire et son expérience à votre service. Des oreilles attentives, une présence rassurante à l'écoute de vos besoins et envies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 department-inner-icon">
+                       
+                    </div>
+                    <div class="col-md-9 col-sm-9">
+                        <h2><a href="#"> Un large choix d'activités</a></h2>
+                        <p class="mb60">Club de lecture, ateliers de yoga, de bricolage ou d'arts plastiques, sorties culturelles ou touristiques, Gym douce…. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 department-inner-icon">
+                       
+                    </div>
+                    <div class="col-md-9 col-sm-9">
+                        <h2><a href="#"> Une restauration de qualité</a></h2>
+                        <p class="mb60">Une cuisine authentique et équilibrée faite avec des produits régionaux et de saison. du petit déjeuner au dîner  dans les restaurants ASSIREM ou chez vous, le plaisir est aussi dans l'assiette.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p> <strong> La communication et la convivialité sont au cœur de la résidence ASSIREM, mais rien n'est imposé, c'est vous qui décidez.</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="heading-title"><i>Des activités variées et adaptées :</i> </h1>
+                                     
+            </div>
+        </div>
+        <div class="row dt-bottom">
+            <div class="col-md-12">
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="dr1">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="images/paint.PNG" class="img-responsive" alt="" />
+                            </div>
+                            <div class="col-md-8">
+                                <div class="dr-details">
+                                    <p>
+                                        Chaque maison élabore et propose quotidiennement son propre programme d’animations dont le contenu est renouvelé régulièrement.
+                                        Les ateliers et animations y sont proposés en groupe ou de manière individuelle en fonction de la capacité du résident et de ses besoins.
+                                        Chacun est invité à y participer à son rythme et selon ses envies : <br>
+                                        <ul class="point" style="list-style:circle; ">
+                                             
+                                            <li>Activités intellectuelles et culturelles</li>
+                                            <li>Activités physiques et sportives</li> 
+                                            <li>Activités de détente et relaxation</li>
+                                            <li>Activités thérapeutiques …</li>
+                                        </ul>           
+                                    
+                                    </p>                                  
+                                                                   
+                                </div>
+                            </div>                     
+                                                                     
+                        </div>
+                    </div>
+                  </div>
+            </div>
+                    
+        </div>
+    </div>
+</div>
+                  </div>
+            </div>
+           
+
+<div class="ptb80 lightbg">
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-12 col-md-12">
+              <h1 class="heading-title"></h1><h4 class="sub-title-normal"></h4>
+          </div>
+      </div>   
+        <div class="row">
+          <div class="col-md-6">
+              <div >
+                <div class="blog-section-img">
+
+                    <div >
+                      <img class="bg_img img-responsive" src="images/dehors.PNG" alt="">
+                      
+                    </div>
+                  </div>
+                  <p>Nous mettons tout en œuvre pour nous adapter à votre rythme tout en respectant vos attentes.
+                     Nous veillons sur vous sans jugement, avec compréhension et respect.
+                    Nous mettons un point d’honneur à tenir nos promesses afin de construire ensemble une relation de proximité et de confiance.
+                    Nous nous impliquons au quotidien et nous nous rendons disponible.
+                </p>
+                </div>  
+          </div>
+          <div class="col-md-6">
+            <div>
+            <div class="blog-section-img">
+
+                <div >
+                  <img class="bg_img img-responsive" src="images/happy.PNG" alt="">
+                </div>
+              </div>
+            </div>  
+            <p>
+                Nous donnons le meilleur de nous-mêmes en veillant aux moindres détails afin de pouvoir à la fois anticiper mais aussi répondre à toutes vos envies.
+                <br>Soigneusement formée, l'équipe ASSIREM met son savoir-faire et son expérience à votre service.
+                <br>Des oreilles attentives, une présence rassurante à l'écoute de vos besoins et envies.
+            </p>
+        </div>            
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="heading-title">Chaque résident peut notamment profiter :</h1>  
+            </div>
+        </div>
+        <div class="row dt-bottom">
+            <div class="col-md-12">
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="dr2">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="images/home2-about.jpg" class="img-responsive" alt="" />
+                            </div>
+                                         <div class="col-md-8">
+                                <div class="dr-details">
+                                                <ul class="point" style="list-style:circle; ">  Un cadre de vie agréable</ul>
+                                         <ul class="point" style="list-style:circle; ">     Une équipe médicale pluridisciplinaire</ul>
+                                          
+                                            <ul class="point" style="list-style:circle; "> 	Une restauration de qualité</ul>
+                                            <ul class="point" style="list-style:circle; "> 	Une solution pour chaque budget</ul>
+                                            <ul class="point" style="list-style:circle; "> 	Un large choix d'activités</ul>
+                                            <ul class="point" style="list-style:circle; "> 	Des services sur mesure</ul>
+                                            <ul class="point" style="list-style:circle; "> 	Un appartement pour votre confort </ul>
+                                         <ul class="point" style="list-style:circle; ">Un accueil ouvert 7/7 jours et une permanence téléphonique ouverte tous les jours et 24/24 heures.</ul>                            
+                                                                   
+                                </div>
+                            </div>  
+                   
+                                                                     
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+           
+
+
+<!-- Why-choose Section -->
+<div class="why-choose-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-1 col-md-10 text-center">
+                <h1 class="heading-title"><i>Pourquoi Nous Choisir!</i></h1>
+                <h4 class="sub-title mb30"></h4>
+                <p>
+                    Nous proposant <strong>un hébergement permanent</strong>, <strong>un hébergement temporaire</strong> et <strong>un accueil de jour</strong>,
+                     nous accueillons les personnes âgées en perte d'autonomie, encadrées par des <strong>équipes
+                        soignantes spécialisées</strong>. A noter que notre maison dispose d'une unité dédiée à 
+                      la prise en soin des personnes atteintes de la maladie d'Alzheimer ou troubles 
+                      apparentés. Reconnus pour nos <strong>prestation d'hébergement hautement qualitatives</strong>,
+                       nous offrons à chacun de nos résidents un confort hôtelier, un bien-être et un 
+                       environnement sans égal au quotidien.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="why-choose-box">
+                    <div class="why-icon-box">
+                        <i class="fa fa-building-o"></i>
+                    </div>
+                    <div class="why-choose-content">
+                        <div class="why-heading counter">450</div>
+                        <div class="why-sub-heading">Chambres</div>
+                    </div>                    
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="why-choose-box">
+                    <div class="why-icon-box">
+                        <i class="fa fa-patient-md"></i>
+                    </div>
+                    <div class="why-choose-content">
+                        <div class="why-heading counter">80</div>
+                        <div class="why-sub-heading">Médecins et infirmiéres </div>
+                    </div>                    
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="why-choose-box">
+                    <div class="why-icon-box">
+                        <i class="fa fa-trophy"></i>
+                    </div>
+                    <div class="why-choose-content">
+                        <div class="why-heading counter">15</div>
+                        <div class="why-sub-heading">Année d'expérience</div>
+                    </div>                    
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="why-choose-box">
+                    <div class="why-icon-box">
+                        <i class="fa fa-smile-o"></i>
+                    </div>
+                    <div class="why-choose-content">
+                        <div class="why-heading counter">3000</div>
+                        <div class="why-sub-heading" >Senoir heureux</div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Why-choose Section -->
+
+
+
+
+<!-- Footer-section -->
+<div class="footer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="footer-contact-box">
+                <h2>Contactez Nous</h2>
+                <div class="contact-icon">
+                    <i class="icon-location-pin icons"></i>
+                    <p>23 Boulevard de France, 91000 Évry</p>
+                </div>
+                <div class="contact-icon">
+                    <i class="icon-envelope icons"></i>
+                    <p>info@maison_retraire.com</p>
+                </div>
+                <div class="contact-icon">
+                    <i class="icon-call-out icons"></i>
+                    <p>0193950000</p>
+                </div>                
+               <div class="footer-social-box">
+                                    <ul>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul></div>
+               
+                                               
+                </div>
+            </div>
+            <div class="col-md-offset-1 col-md-3">
+                <div class="footer-widget">
+                <h2>Navigation</h2>
+                <ul class="listnone bullet-arrow-right footer-ul footer-menu" sty>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Nos engagements</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Log In</a></li>
+                <li><a href="#">Démarches d'entrée</a></li>
+                </ul>
+                </div>
+  
+            </div>
+            <div class="col-md-3">
+                <div class="footer-widget">
+                <h2><i> Heures de travail :</i></h2>
+                <ul class="listnone footer-ul" style="color: #FFF;">
+                <li>Lundi - Vendredi</li>
+                <li>: <strong>8.00 - 16.00</strong></li>
+                <li>Samedi</li>
+                <li>: <strong>9.30 - 12.00</strong></li>
+                <li>Dimanche</li>
+                <li>: <strong>9.30 - 10.30</strong></li>
+                </ul>
+                </div>                
+            </div>
+            <div class="col-md-2">
+                <div class="footer-widget">
+  
+                </div>                
+            </div>           
+  
+        </div>
+    </div>
+  </div>
+  <!-- /Footer-section -->
+
+<!-- Tiny-footer Section -->
+<div class="tiny-footer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-4 col-md-6">
+                <div class="tiny-footer-copyright">Copyright 2016 @ASSIREM Tous les droits réservées</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Tiny Footer-section -->
+<!-- jquery -->
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/waypoints.min.js"></script> <!-- facts count js Required for jquery.counterup.js file -->
+<script type="text/javascript" src="js/jquery.counterup.js"></script>
+<script type="text/javascript" src="js/menumaker.js"></script> 
+<script type="text/javascript" src="js/theme.js"></script> 
+<!-- end  jquery -->
+</body>
+
+
+</html>

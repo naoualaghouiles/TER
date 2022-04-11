@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DatabaseMigrationSettings">
+    <database-infos>
+      <database-info>
+        <option name="enabled" value="true" />
+        <dbms-id>mysql</dbms-id>
+      </database-info>
+    </database-infos>
+  </component>
+  <component name="JpaLiquibaseChangesConfig">
+    <exclude-change idName="service_propose#libelle_service_propose" tagName="addUniqueConstraint" />
+    <exclude-change idName="service_hopital#nom_service" tagName="addUniqueConstraint" />
+    <exclude-change idName="FK_DOCTOR_ON_IDSPECIALITE" tagName="addForeignKeyConstraint" />
+    <exclude-change idName="fk_serpromed_on_doctor" tagName="addForeignKeyConstraint" />
+    <exclude-change idName="services_medecins" tagName="createTable" />
+    <exclude-change idName="services_propose_medecins" tagName="createTable" />
+    <exclude-change idName="admin" tagName="createTable" />
+    <exclude-change idName="fk_serpromed_on_service_propose" tagName="addForeignKeyConstraint" />
+    <exclude-change idName="patient#numss" tagName="addUniqueConstraint" />
+    <exclude-change idName="service_propose" tagName="createTable" />
+    <exclude-change idName="doctor" tagName="createTable" />
+    <exclude-change idName="service_hopital" tagName="createTable" />
+    <exclude-change idName="fk_sermed_on_service_hopital" tagName="addForeignKeyConstraint" />
+    <exclude-change idName="fk_sermed_on_doctor" tagName="addForeignKeyConstraint" />
+    <exclude-change idName="patient#test" tagName="addUniqueConstraint" />
+    <exclude-change idName="specialite" tagName="createTable" />
+  </component>
+</project>

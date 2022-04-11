@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!-- head -->
+
+
+<head>
+<title> ASSIREM : Résidence  &amp; Maison de Retraite Médicalisée </title>
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="Maisons de retraite pour personnes âgées" />
+<meta name="keywords" content="Assirem, Maison, Medicalisé, Maisons de retraite ">
+<meta name="author" content="Naoual & Fatma" />
+<meta name="MobileOptimized" content="320" />
+<!-- favicon-icon -->
+<link rel="icon" type="image/icon" href="images/favicon/favicon.ico">
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Menu marker CSS -->
+<link href="css/fontello.css" rel="stylesheet">
+<!--  fonts -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,800" rel="stylesheet">
+<!-- Font Awesome CSS -->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!-- Font simple-line-icons CSS -->
+<link href="css/simple-line-icons.css" rel="stylesheet">
+<!-- Font Custom  CSS -->
+<link href="css/menumaker.css" rel="stylesheet">
+<!-- OWL CSS -->
+<link href="css/owl.carousel.css" rel="stylesheet">
+<!--  Style CSS -->
+<link href="css/style.css" rel="stylesheet">
+<!-- Stucture CSS -->
+<link href="css/stucture.css" rel="stylesheet">
+
+</head>
+<!-- /end head -->
+
+<body>
+<!--  Topbar -->
+<div class="topbar">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-sm-5">
+        <p class="wel-msg">Bienvenu Chez ASSIREM | Maison de Retraite Médicalisée</p>
+      </div>
+      <div class="col-md-7 col-sm-7 hidden-xs">
+        <div class="topbar-contact"> <span class="topbar-email topbar-info"><a href="#"><i class="fa fa-envelope"></i>info@maison_retraire.com</a>
+            <span class="topbar-info" ><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>0193950000</a></span> 
+      </div>
+    </div>
+  </div>
+</div>    
+<!-- /Topbar -->
+
+    <!-- Header -->
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a style="width: 30%" class="navbar-brand" href="#" th:href="@{/}"><img src="images/Assirem-logo.png" class="img-responsive" alt="Logo"></a> <strong style="color: black; line-height:300%; position: absolute; margin-left: 10%;font-size: 1.5em; "><i>ASSIREM</i></strong> <p style="color: black;"></div>
+                <div class="col-md-9">
+                    <div class="menu-box">
+                        <div id="navmenu">
+                            <ul>
+                                <li><a href="#" th:href="@{/index}">Accueil</a>  </li>
+                                <li><a href="#">Nos engagements</a>
+                                    <ul>
+                                        <li><a href="#" th:href="@{/expertise}">Expertise médicale</a></li>
+                                        <li><a href="#" th:href="@{/accompagnement}">Accompagnement <br><br>personnalisé</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Services</a>
+                                    <ul>
+                                        <li><a href="#" th:href="@{/nosservice}">Nos services</a></li>
+                                        <li><a href="#" th:href="@{/tarifs}">Tarifs</a></li>
+                                        <li><a href="#" th:href="@{/benevolats}">Bénévolats</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" th:href="@{/demarche}">Démarches d'entrée </a>
+                                <li class="pull-right"><a href="#"  th:href="@{/login}" class=""><i class="fa fa-sign-in" aria-hidden="true"></i> <span>Login</span></a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Header -->
+
+<!-- Page Header -->
+<div class="page-header">
+    <div class="container">
+        <div class="row page-section">
+            <div class="col-md-8">
+                <h4>Nos proposons des solutions sur-mesure</h4>
+                <h1>Les Tarifs</h1>
+            </div>
+            <div class="col-md-4">
+            <a href="#" class="btn btn-linegreen pull-right mt20 mr0">Login</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Page Header -->
+
+<!-- prix section -->
+<div class="row">
+  <div class="col-md-offset-1 col-md-10">
+      <div class="about-whitebox">
+          <div class="row text-justify">
+              <div class="col-md-12">
+                  <h1 class="heading-title text-center"><i>Les tarifs à ASSIREM</i> </h1>
+                 
+                  <p >Le tarif en résidence ASSIREM varie en fonction de nombreux critères
+                     comme <strong>La surface de la chambre choisie, le type d'ameublement et de 
+                      confort de la chambre, la climatisation individuelle de la chambre,et
+                       les services auxquels vous choisissez de souscrire...</strong> En plus des services
+                       inclus dans votre loyer, vous pouvez si vous avez besoin bénéficier de
+                        services complémentaires. Notre équipe se tient à votre disposition
+                         pour estimer votre loyer personnalisé et trouver la solution qui
+                          vous convient. <br>
+                    Nous vous proposons une solution sur-mesure, adaptée à votre budget et à vos besoins.
+                    </p>
+                  
+                      <div class="text-center"> <p>   <BR> 
+                      
+                      </p> </div>
+              </div>
+          </div>
+      </div>
+  </div>            
+</div>
+<!-- DURÉE DE SÉJOUR -section -->
+<div class="row">
+  <div class="col-md-10" style=" padding-left: 4%;padding-top: 5%;">
+    <h1 style="color:#000000"> <i> CHOISISSEZ VOTRE DURÉE DE SÉJOUR :</i></h1>
+    
+  </div>
+  
+  <div style="margin-left: 18%;"><img src="images/SOLUTION.PNG" class="img-responsive" alt=""  style="margin-top: 1%;margin-bottom: 5%;"/></div> 
+ 
+</div>
+<!-- / DURÉE DE SÉJOUR -section -->
+
+<div class="ptb80">
+    <div class="container">
+        <div class="row text-justify">
+            <div class="col-lg-9 col-md-9">
+                <img src="images/FLEUR.PNG" alt="">
+            </div>
+            <div class="col-lg-3 col-md-3">
+              <p>Tous les membres de l’équipe sont au service de votre bien-être et de votre sérénité.
+                 En cas de problème, la direction est aussi là pour vous écouter et faciliter le dialogue. <br> 
+                Il existe aussi un conseil de "vie sociale", composé de résidents et de membres des
+                 familles élus, de membres du personnel, de représentants de la commune et d’un membre 
+                 de l’association gestionnaire, auprès duquel vous pouvez vous adresser.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- info-section section -->
+<div class="faq-section ptb80">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+              <h1 class="heading-title">Quelques Informations</h1>
+                       
+          </div>         
+      </div>
+      <div class="row mb50">
+          <div class="col-md-3">
+              
+          </div>
+          <div class="col-md-9" role="tablist">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab">
+                  <h4 class="panel-title question-heading">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne1" aria-expanded="false" aria-controls="collapseOne1" class="collapsed">
+                      <strong>Les informations pratiques et les papiers nécessaires</strong>                   
+                      <span class="faq-btn faq-btn-minus hidden-xs"><i class="fa fa-caret-down"></i></span>
+                      <span class="faq-btn faq-btn-plus hidden-xs"><i class="fa fa-caret-up"></i></span></a>
+                  </h4>
+                </div>
+                <div id="collapseOne1" class="panel-collapse collapse" role="tabpanel">
+                  <div class="panel-body">
+                    <p>
+                      <ul>
+                        <li>Votre carte d’assuré(e) social(e) (carte vitale) et un
+                           justificatif d’affiliation à un organisme complémentaire,</li>
+                        <li>Votre dossier médical,</li>
+                        <li>Votre dossier administratif,</li>
+                        <li>Votre liste des soins médicals,</li>
+                        <li>Vos médicaments administrés,</li>
+                        <li>Vos justificatifs de ressources : votre dernier avis d’imposition,</li>
+                        <li>Vos affaires personnelles marquées à votre nom.</li>
+                      </ul>
+
+                    </p>
+                  </div>
+                </div>
+              </div> 
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab">
+                  <h4 class="panel-title question-heading">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <strong>Le tarif d'hébergement</strong>                   
+                      <span class="faq-btn faq-btn-minus hidden-xs"><i class="fa fa-caret-down"></i></span>
+                      <span class="faq-btn faq-btn-plus hidden-xs"><i class="fa fa-caret-up"></i></span></a>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel">
+                  <div class="panel-body text-justify">
+                    <p>Le tarif d'hébergement correspond à une  <strong> formule "tout compris"</strong>
+
+                      couvrant notamment l'hébergement, la restauration et l'animation pour le résident.
+                       Pas de mauvaise surprise en fin de mois pour le résident et sa famille ; donc aucune
+                        facturation de coûts cachés comme le café après repas, le goûter... . <br>
+                      
+                     Ainsi l'ensemble des résidents bénéficie de manière équitable des mêmes services 
+                     hôteliers (par exemple, les repas à thème ne génèrent pas de facturation supplémentaire, 
+                     <strong> permettant à tous de profiter d'un moment de convivialité </strong>). <br>
+                      
+                     Seuls les <strong> services complémentaires de confort </strong>
+                      , à souscrire individuellement par le résident, à sa convenance et en fonction de ses 
+                      besoins, génèrent une facturation annexe : chambres climatisée, lit double, télévision
+                       personnel… . <br>
+                      
+                     Aucun frais administratif supplémentaire (de dossier d'entrée ou de réservation) n'est
+                      facturé au sein de <strong>ASSIREM</strong>. <br>
+                     </p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab">
+                  <h4 class="panel-title question-heading">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="collapsed">
+                      <strong>Les coûts liés à la santé</strong>                        
+                      <span class="faq-btn faq-btn-minus hidden-xs"><i class="fa fa-caret-down"></i></span>
+                      <span class="faq-btn faq-btn-plus hidden-xs"><i class="fa fa-caret-up"></i></span></a>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel">
+                  <div class="panel-body text-justify">
+                    <p>Les coûts liés à la santé et aux soins octroyés en maison de retraite
+                       (prestation médicales et paramédicales) sont pris en charge par
+                       l’assurance maladie. Ils ne sont donc pas facturés au résident (directement versé
+                        par douzième à l'établissement sous la forme 
+                         d'une dotation). Il est calculé en fonction de la charge en soins et du 
+                         niveau de dépendance moyen des résidents.</p>
+                  </div>
+                </div>
+              </div>                
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab">
+                  <h4 class="panel-title question-heading">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour" class="collapsed">
+                      <strong>  Les aides publiques disponibles</strong>                       
+                      <span class="faq-btn faq-btn-minus hidden-xs"><i class="fa fa-caret-down"></i></span>
+                      <span class="faq-btn faq-btn-plus hidden-xs"><i class="fa fa-caret-up"></i></span></a>
+                  </h4>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel">
+                  <div class="panel-body text-justify">
+                    <p>l’<strong>ASH </strong>ou aide sociale d’hébergement  –  les résidents dont les
+                       ressources ne suffisent pas pour payer le coût de la maison de retraite peuvent
+                        demander l’ASH auprès du département. <br>
+                       les aides au logement (l’<strong>APL</strong> ou l’<strong>ALS</strong>), Elle est
+                        versée directement à l’établissement par la Caisse d’allocations familiales (<strong>CAF</strong>) 
+                        ou la Mutualité sociale agricole (<strong>MSA</strong>) pour les personnes dont les revenus sont
+                         inférieurs à certains plafonds ;
+                        et enfin, l’<strong>APA</strong> (allocation personnalisée d’autonomie).
+                         Celle-ci s’applique à la partie de la facture relative au tarif
+                          dépendance pour les <strong>GIR</strong>  (groupe iso-ressources qui 
+                          correspond au 
+                          niveau de perte d’autonomie d’une personne âgée)  <strong>1-2</strong> 
+                          et <strong>3-4</strong>. 
+                          En effet, il est à noter que les personnes en <strong>GIR 5-6</strong> ne sont pas
+                           éligibles à l’APA.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab">
+                  <h4 class="panel-title question-heading">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive" class="collapsed">
+                      <strong>Le reste à charge pour le résident ou ses proches</strong>                       
+                      <span class="faq-btn faq-btn-minus hidden-xs"><i class="fa fa-caret-down"></i></span>
+                      <span class="faq-btn faq-btn-plus hidden-xs"><i class="fa fa-caret-up"></i></span></a>
+                  </h4>
+                </div>
+                <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                  <div class="panel-body text-justify">
+                    <p>Les conditions d’obtention de ces aides sont nombreuses, et leur montant va
+                       aussi tenir compte des revenus du conjoint ainsi que de ses obligés alimentaires.
+                        En effet, <strong>les enfants</strong> et <strong>même les petits enfants</strong> (selon les départements pour ces 
+                        derniers) peuvent être mis à contribution pour <strong>financer une partie</strong> des frais
+                         d’hébergement d’un proche. C’est au conseil départemental que revient la
+                          mission d’étudier la situation des obligés alimentaires d’une personne qui 
+                          ne peut pas payer seule son hébergement en maison de retraite pour déterminer 
+                          le montant de l’ASH qu’il va verser</p>
+                  </div>
+                </div>
+              </div>                               
+           </div>
+      </div>            
+  </div>
+</div>
+
+<div >
+  <div class="container">
+      <div class="row dt-bottom">
+          <div class="col-md-12">
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active" id="dr1">
+                      <div class="row">
+                          <div class="col-md-4">
+                              <img src="images/image1.jpg" class="img-responsive" alt="" style="height: 300px; width: 400px;" />
+                          </div>
+                          <div class="col-md-8">
+                              <div class="dr-details">
+                                  <p>
+                                    Le prix de votre séjour chaque mois comprend l’hébergement, 
+                                    la restauration, les soins, l’animation, l’entretien de votre
+                                     linge et l’entretien de la résidence. Le téléphone et les services
+                                      des prestataires extérieurs (coiffeur, pédicure….) ne sont pas
+                                       compris dans ce prix.  <br>
+                                       Toutes les prestation complémentaires sont a un prix de 50€ chacune.
+                                      <ul>
+                                        <li>
+                                          la restauration privé 
+                                        </li>
+                                        <li>
+                                          Kinésithérapeute 
+                                        </li>
+                                        <li>
+                                          salon privé 
+                                        </li>
+                                        <li>
+                                          ... 
+                                        </li>
+                                      </ul>
+                                  </p>                                  
+                                                                 
+                              </div>
+                          </div>                     
+                                                                   
+                      </div>
+                  </div>
+                </div>
+          </div>
+                  
+      </div>
+  </div>
+</div>
+<!-- / info-section -section -->
+<div class="panel-heading" role="tab" id="headingOne" >
+  <div class="row">
+    <div class="col-md-10">                         
+        <h1 style="font-size: 2em; color: black;" > Tarifs : </h1>                       
+      <span>             </span>                       
+    </div>
+  </div>
+</div>
+<div >
+  <div class="col-md-11" >
+    <ul style="list-style: circle">               
+      <div class="panel panel-default">
+        <div class="panel-heading">
+           
+          <div class="row">
+              <div class="col-md-10">
+                <li style="color:#C3AA39; font-size: 2em;">
+                  <a style="font-size: 1.2em; color: #000;" 
+                  role="button" class="panel-title career-heading collapsed"
+                   data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                    aria-expanded="false" aria-controls="collapseTwo">
+                    <i> GIR 1/2 </i></li>                      
+                  </a>
+                </li>
+              </div>
+              <div class="row">
+                <div class="col-md-9">
+                  <ul>
+                    <li>Prix de la pension hébergement</li>
+                    <li>GIR 1/2</li>
+                    <li>Total de la journée</li>
+                    <li><strong>Moyenne mensuelle</strong></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <ul class="price-amt" style="list-style: none;">
+                    <li>: 48,87€</li>
+                    <li>: 20,51€</li>
+                    <li>: 68,88€</li>
+                    <li><strong>: 2 066,49€</strong></li>
+                  </ul>
+                </div>
+              </div>
+
+          </div>
+          
+        </div>
+
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+           
+          <div class="row">
+              <div class="col-md-10">
+                <li style="color:#C3AA39; font-size: 2em;">
+                  <a style="font-size: 1.2em; color: #000;" 
+                  role="button" class="panel-title career-heading collapsed"
+                   data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                    aria-expanded="false" aria-controls="collapseTwo">
+                    <i> GIR 3/4 </i></li>                      
+                  </a>
+                </li>
+              </div>
+              <div class="row">
+                <div class="col-md-9">
+                  <ul >
+                    <li>Prix de la pension hébergement</li>
+                    <li>GIR 3/4</li>
+                    <li>Total de la journée</li>
+                    <li><strong>Moyenne mensuelle</strong></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <ul class="price-amt" style="list-style: none;">
+                    <li>: 48,87€</li>
+                    <li>: 13,10€</li>
+                    <li>: 61,47€</li>
+                    <li><strong>: 1 844,1€</strong></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          
+        </div>
+
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+           
+          <div class="row">
+              <div class="col-md-10">
+                <li style="color:#C3AA39; font-size: 2em;">
+                  <a style="font-size: 1.2em; color: #000;" 
+                  role="button" class="panel-title career-heading collapsed"
+                   data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                    aria-expanded="false" aria-controls="collapseTwo">
+                    <i> GIR 5/6 </i></li>                      
+                  </a>
+                </li>
+              </div>
+              <div class="row">
+                <div class="col-md-9">
+                  <ul>
+                    <li>Prix de la pension hébergement</li>
+                    <li>GIR 5/6</li>
+                    <li>Total de la journée</li>
+                    <li><strong>Moyenne mensuelle - APA déduite</strong></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <ul class="price-amt" style="list-style: none;">
+                    <li>: 48,87€</li>
+                    <li>: 5€</li>
+                    <li>: 53,37€</li>
+                    <li><strong>: 1 601,1€</strong></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          
+        </div>
+
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+           
+          <div class="row">
+              <div class="col-md-10">
+                <li style="color:#C3AA39; font-size: 2em;">
+                  <a style="font-size: 1.2em; color: #000;" 
+                  role="button" class="panel-title career-heading collapsed"
+                   data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                    aria-expanded="false" aria-controls="collapseTwo">
+                    <i> - de 60 ans  </i></li>                      
+                  </a>
+                </li>
+              </div>
+              <div class="row">
+                <div class="col-md-9">
+                  <ul>
+                    <li>Prix de la pension hébergement</li>
+                    <li> <strong>Moyenne mensuelle- APA déduite</strong></li>
+                  </ul>
+                </div>
+                <div class="col-md-3" style="padding-bottom: 4%;">
+                  <ul class="price-amt" style="list-style: none;">
+                    <li>: 68,67€</li>
+                    <li> <strong>: 2 060,1€</strong></li>
+
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          
+        </div>
+
+      </div>
+    </ul>                                                     
+   </div>
+</div> 
+
+
+<!-- Why-choose Section -->
+<div class="why-choose-section">
+  <div class="container">
+    <div class="row" style="margin-top: 70%;">
+      <div class="col-md-12 text-center">
+        <h1 class="heading-title"><i>Pourquoi Nous Choisir!</i></h1>
+        
+      </div>
+    </div>
+    <div class="row text-justify" style="margin-top: 5%;">
+      <div class="col-md-6">
+        <p>
+          Nous proposant <strong>un hébergement permanent</strong>, <strong>un hébergement temporaire</strong> et <strong>un accueil de jour</strong>,
+           nous accueillons les personnes âgées en perte d'autonomie, encadrées par des <strong>équipes
+              soignantes spécialisées</strong>. A noter que notre maison dispose d'une unité dédiée à 
+            la prise en soin des personnes atteintes de la maladie d'Alzheimer ou troubles 
+            apparentés. Reconnus pour nos <strong>prestation d'hébergement hautement qualitatives</strong>,
+             nous offrons à chacun de nos résidents un confort hôtelier, un bien-être et un 
+             environnement sans égal au quotidien.
+      </p>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div class="mb40">
+              <div class="why-icon-box"> <i class="fa fa-trophy"></i> </div>
+              <div class="why-choose-content">
+                <div class="why-heading counter">15</div>
+                <div class="why-sub-heading">Année d'expérience</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="mb40">
+              <div class="why-icon-box"> <i class="fa fa-smile-o"></i> </div>
+              <div class="why-choose-content">
+                <div class="why-heading counter">3000</div>
+                <div class="why-sub-heading">Senoir heureux</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="mb40">
+              <div class="why-icon-box"> <i class="fa fa-patient-md"></i> </div>
+              <div class="why-choose-content">
+                <div class="why-heading counter">80</div>
+                <div class="why-sub-heading">Médecins et infirmiéres </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="mb40">
+              <div class="why-icon-box"> <i class="fa fa-building-o"></i> </div>
+              <div class="why-choose-content">
+                <div class="why-heading counter">450</div>
+                <div class="why-sub-heading">Chambres</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /Why-choose Section -->
+
+
+
+<!-- Footer-section -->
+<div class="footer-section">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-3">
+              <div class="footer-contact-box">
+              <h2>Contactez Nous</h2>
+              <div class="contact-icon">
+                  <i class="icon-location-pin icons"></i>
+                  <p>23 Boulevard de France, 91000 Évry</p>
+              </div>
+              <div class="contact-icon">
+                  <i class="icon-envelope icons"></i>
+                  <p>info@maison_retraire.com</p>
+              </div>
+              <div class="contact-icon">
+                  <i class="icon-call-out icons"></i>
+                  <p>0193950000</p>
+              </div>                
+             <div class="footer-social-box">
+                                  <ul>
+                                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                  </ul></div>
+             
+                                             
+              </div>
+          </div>
+          <div class="col-md-offset-1 col-md-3">
+              <div class="footer-widget">
+              <h2>Navigation</h2>
+              <ul class="listnone bullet-arrow-right footer-ul footer-menu" sty>
+              <li><a href="#">Accueil</a></li>
+              <li><a href="#">Nos engagements</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Log In</a></li>
+              <li><a href="#">Démarches d'entrée</a></li>
+              </ul>
+              </div>
+
+          </div>
+          <div class="col-md-3">
+              <div class="footer-widget">
+              <h2><i> Heures de travail :</i></h2>
+              <ul class="listnone footer-ul" style="color: #FFF;">
+              <li>Lundi - Vendredi</li>
+              <li>: <strong>8.00 - 16.00</strong></li>
+              <li>Samedi</li>
+              <li>: <strong>9.30 - 12.00</strong></li>
+              <li>Dimanche</li>
+              <li>: <strong>9.30 - 10.30</strong></li>
+              </ul>
+              </div>                
+          </div>
+          <div class="col-md-2">
+              <div class="footer-widget">
+
+              </div>                
+          </div>           
+
+      </div>
+  </div>
+</div>
+<!-- /Footer-section -->
+
+<!-- Tiny-footer Section -->
+<div class="tiny-footer-section">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-offset-4 col-md-6">
+              <div class="tiny-footer-copyright">Copyright 2016 @ASSIREM Tous les droits réservées</div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- /Tiny Footer-section -->
+<!-- jquery -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/menumaker.js"></script> 
+<script type="text/javascript" src="js/theme.js"></script> 
+<!-- end  jquery -->
+</body>
+
+
+</html>

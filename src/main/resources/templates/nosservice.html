@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!-- head -->
+
+
+<title> ASSIREM : Résidence  &amp; Maison de Retraite Médicalisée </title>
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="Maisons de retraite pour personnes âgées" />
+<meta name="keywords" content="Assirem, Maison, Medicalisé, Maisons de retraite ">
+<meta name="author" content="Naoual & Fatma" />
+<meta name="MobileOptimized" content="320" />
+<!-- favicon-icon -->
+<link rel="icon" type="image/icon" href="images/favicon/favicon.ico">
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Menu marker CSS -->
+<link href="css/fontello.css" rel="stylesheet">
+<!-- Template fonts -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,800" rel="stylesheet">
+<!-- Font Awesome CSS -->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!-- Font simple-line-icons CSS -->
+<link href="css/simple-line-icons.css" rel="stylesheet">
+<!-- Font Custom  CSS -->
+<link href="css/menumaker.css" rel="stylesheet">
+<!-- OWL CSS -->
+<link href="css/owl.carousel.css" rel="stylesheet">
+<!-- Magnific-popup CSS -->
+<link href="css/magnific-popup.css" rel="stylesheet">
+<!-- Template Style CSS -->
+<link href="css/style.css" rel="stylesheet">
+<!-- Stucture CSS -->
+<link href="css/stucture.css" rel="stylesheet">
+
+</head>
+<!-- /end head -->
+
+<body>
+<!--  Topbar -->
+<div class="topbar">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-sm-5">
+        <p class="wel-msg">Bienvenu Chez ASSIREM | Maison de Retraite Médicalisée</p>
+      </div>
+      <div class="col-md-7 col-sm-7 hidden-xs">
+        <div class="topbar-contact"> <span class="topbar-email topbar-info"><a href="#"><i class="fa fa-envelope"></i>info@maison_retraire.com</a>
+            <span class="topbar-info" ><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>0193950000</a></span> 
+      </div>
+    </div>
+  </div>
+</div>    
+<!-- /Topbar -->
+
+    <!-- Header -->
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a style="width: 30%" class="navbar-brand" href="" th:href="@{/}"><img src="images/Assirem-logo.png" class="img-responsive" alt="Logo"></a> <strong style="color: black; line-height:300%; position: absolute; margin-left: 10%;font-size: 1.5em; "><i>ASSIREM</i></strong> <p style="color: black;"></div>
+                <div class="col-md-9">
+                    <div class="menu-box">
+                        <div id="navmenu">
+                            <ul>
+                                <li><a href="#" th:href="@{/index}">Accueil</a>  </li>
+                                <li><a href="#">Nos engagements</a>
+                                    <ul>
+                                        <li><a href="#" th:href="@{/expertise}">Expertise médicale</a></li>
+                                        <li><a href="#" th:href="@{/accompagnement}">Accompagnement <br><br>personnalisé</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Services</a>
+                                    <ul>
+                                        <li><a href="#" th:href="@{/nosservice}">Nos services</a></li>
+                                        <li><a href="#" th:href="@{/tarifs}">Tarifs</a></li>
+                                        <li><a href="#" th:href="@{/benevolats}">Bénévolats</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" th:href="@{/demarche}">Démarches d'entrée </a>
+                                <li class="pull-right"><a href="#"  th:href="@{/login}" class=""><i class="fa fa-sign-in" aria-hidden="true"></i> <span>Login</span></a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Header -->
+
+<!-- Page Header -->
+<div class="page-header">
+  <div class="container">
+    <div class="row page-section">
+      <div class="col-md-8">
+    <div class="row">
+        <div id="testimonial-box1" class="testimonial-style-box">
+            <div class="testimonial-style-content">
+              <p class="testimonial-text2">
+                <ul style=" list-style-type: none;">
+                  <li>  <strong><h1>On parle</h1></strong> </li>
+              </p>
+            </div>
+          
+        
+            <div class="testimonial-style-content">
+              <p class="testimonial-text2">
+                <ul style=" list-style-type: none;">
+                  <li >  <strong><h1>On ris</h1></strong></li>
+                </ul>
+            </p>
+            </div>
+          
+          
+            <div class="testimonial-style-content">  
+                <ul style=" list-style-type: none;">
+                  <li>  <strong><h1>On vit comme une famille</h1></strong> 
+                </ul>
+              </p>
+            </div>
+                  
+        </div>
+    </div>
+ 
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Page Header -->
+
+<!--  section -->
+<div class="ptb80 popup-gallery">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+              <h1 class="heading-title">Les services proposés dans cette Maison</h1><h4 class="sub-title-normal">Nos Spécial Services</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="gallery-box">
+              <a href="images/service/terasse.jpg" title="Image Heading"><img src="images/service/terasse.jpg" class="img-responsive" alt="" />
+              <div class="overlay-gallery-box">
+              <h3 class="gallery-title">Terrasse</h3>
+              </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="gallery-box">
+              <a href="images/service/Parcamenage.jpg" title="Image Heading">
+                  <img src="images/service/Parcamenage.jpg" class="img-responsive" alt="" />
+              <div class="overlay-gallery-box">
+              <h3 class="gallery-title">Parc aménagé</h3>
+              </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="gallery-box">
+              <a href="images/service/Kinesitherapeute.jpg" title="Image Heading"><img src="images/service/Kinesitherapeute.jpg" class="img-responsive" alt="" />
+              <div class="overlay-gallery-box">
+              <h3 class="gallery-title">Kinésithérapeute</h3>
+              </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="gallery-box">
+              <a href="images/service/Jardin_therapeutique.jpg" title="Image Heading"><img src="images/service/Jardin_therapeutique.jpg" class="img-responsive" alt="" />
+              <div class="overlay-gallery-box">
+              <h3 class="gallery-title">Jardin thérapeutique</h3>
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="gallery-box">
+              <a href="images/service/anim.jpg" title="Image Heading"><img src="images/service/anim.jpg" class="img-responsive" alt="" />
+              <div class="overlay-gallery-box">
+              <h3 class="gallery-title">Animations 7/7</h3>
+              </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="gallery-box">
+              <a href="images/service/animauxdomestiques.jpg" title="Image Heading"><img src="images/service/animauxdomestiques.jpg" class="img-responsive" alt="" />
+              <div class="overlay-gallery-box">
+              <h3 class="gallery-title">Accueil des animaux domestiques</h3>
+              </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="gallery-box">
+              <a href="images/service/Salonprive.jpg" title="Image Heading"><img src="images/service/Salonprive.jpg" class="img-responsive" alt="" />
+              <div class="overlay-gallery-box">
+              <h3 class="gallery-title">Salon privé</h3>
+              </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="gallery-box">
+              <a href="images/service/Restaurant.jpg" title="Image Heading"><img src="images/service/Restaurant.jpg" class="img-responsive" alt="" />
+              <div class="overlay-gallery-box">
+              <h3 class="gallery-title">Restaurant privé</h3>
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>        
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="gallery-box">
+              <a href="images/service/Cuisine.jpg" title="Image Heading"><img src="images/service/Cuisine.jpg" class="img-responsive" alt="" />
+              <div class="overlay-gallery-box">
+              <h3 class="gallery-title">Cuisine raffinée</h3>
+              </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="gallery-box">
+              <a href="images/service/Accompagnement.jpg" title="Image Heading"><img src="images/service/Accompagnement.jpg" class="img-responsive" alt="" />
+              <div class="overlay-gallery-box">
+              <h3 class="gallery-title">Accompagnement personnalisé</h3>
+              </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="gallery-box">
+              <a href="images/service/supermarche.jpg" title="Image Heading"><img src="images/service/supermarche.jpg" class="img-responsive" alt="" />
+              <div class="overlay-gallery-box">
+              <h3 class="gallery-title">Proximité supermarché et commerce</h3>
+              </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="gallery-box">
+              <a href="images/service/Parking.jpg" title="Image Heading"><img src="images/service/Parking.jpg" class="img-responsive" alt="" />
+              <div class="overlay-gallery-box">
+              <h3 class="gallery-title">Parking privé</h3>
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="gallery-box">
+              <a href="mages/service/connexion.jpg" title="Image Heading"><img src="images/service/connexion.jpg" class="img-responsive" alt="" />
+              <div class="overlay-gallery-box">
+              <h3 class="gallery-title">WI-FI</h3>
+              </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="gallery-box">
+              <a href="images\service/gare.jpg" title="Image Heading"><img src="images\service/gare.jpg" class="img-responsive" alt="" />
+              <div class="overlay-gallery-box">
+              <h3 class="gallery-title">Proximité gare SNCF</h3>
+              </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="gallery-box">
+              <a href="images/espaceb.jpg" title="Image Heading"><img src="images/espaceb.jpg" class="img-responsive" alt="" />
+              <div class="overlay-gallery-box">
+              <h3 class="gallery-title">Espace beauté</h3>
+              </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="gallery-box">
+              <a href="images/bib.jpg" title="Image Heading"><img src="images/bib.jpg" class="img-responsive" alt="" />
+              <div class="overlay-gallery-box">
+              <h3 class="gallery-title">bibliothèque </h3>
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+    </div>          
+</div>
+<!--  Section -->
+<div class="testimonial-style ptb80">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-1"><span class="left-quote">“</span></div>
+      <div class="col-md-6">
+        <h1 class="heading-title">les valeurs de Notre équipes </h1>
+        <h4 class="sub-title">votre satisfaction est importante</h4>
+        <div id="testimonial-box1" class="testimonial-style-box">
+          <div class="item">
+            <div class="testimonial-style-content">
+              <p class="testimonial-text2">
+                <ul>
+                  <li>  <strong><i>Le respect :</i></strong> nous reconnaissons la spécificité de chacun, c’est ce qui constitue la riche humaine.</li>
+                  <li>  <strong><i>La confiance :</i></strong> nous envisageons la relation dans la durée, de manière constructive et équilibrée.</li>
+                </ul>
+              </p>
+              <div class="testimonial-name"><span></span></div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimonial-style-content">
+              <p class="testimonial-text2">
+                <ul>
+                  <li>  <strong><i>Le sens du service :</i></strong> nous expliquons et personnalisons nos programmes d’animations afin de garantir leur qualité et leur pertinence.</li>
+                  <li>  <strong><i>L’esprit d’initiative :</i></strong> nous faisons preuve d’ouverture d’esprit et aimons innover dans notre approche du prendre soin.</li>
+                </ul>
+            </p>
+              <div class="testimonial-name"><span></span></div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimonial-style-content">
+              <p class="testimonial-text2">  
+                <ul>
+                  
+                  <li>  <strong><i>L’engagement :</i></strong> nous engageons notre responsabilité individuelle et collective pour accompagner les évolutions sociales et sociétales.</li>
+                  <li>  <strong><i>L’humour :</i></strong> dessiner un sourire sur votre visage,est essentiel pour nous</li>
+                </ul>
+              </p>
+              <div ><span></span></div>
+            </div>
+          </div>          
+        </div>
+      </div>
+      <div class="col-md-5"> </div>
+    </div>
+  </div>
+</div>
+<!--  Section -->
+
+<!-- Footer-section -->
+<div class="footer-section">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-3">
+              <div class="footer-contact-box">
+              <h2>Contactez Nous</h2>
+              <div class="contact-icon">
+                  <i class="icon-location-pin icons"></i>
+                  <p>23 Boulevard de France, 91000 Évry</p>
+              </div>
+              <div class="contact-icon">
+                  <i class="icon-envelope icons"></i>
+                  <p>info@maison_retraire.com</p>
+              </div>
+              <div class="contact-icon">
+                  <i class="icon-call-out icons"></i>
+                  <p>0193950000</p>
+              </div>                
+             <div class="footer-social-box">
+                                  <ul>
+                                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                  </ul></div>
+             
+                                             
+              </div>
+          </div>
+          <div class="col-md-offset-1 col-md-3">
+              <div class="footer-widget">
+              <h2>Navigation</h2>
+              <ul class="listnone bullet-arrow-right footer-ul footer-menu" sty>
+              <li><a href="#">Accueil</a></li>
+              <li><a href="#">Nos engagements</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Log In</a></li>
+              <li><a href="#">Démarches d'entrée</a></li>
+              </ul>
+              </div>
+
+          </div>
+          <div class="col-md-3">
+              <div class="footer-widget">
+              <h2><i> Heures de travail :</i></h2>
+              <ul class="listnone footer-ul" style="color: #FFF;">
+              <li>Lundi - Vendredi</li>
+              <li>: <strong>8.00 - 16.00</strong></li>
+              <li>Samedi</li>
+              <li>: <strong>9.30 - 12.00</strong></li>
+              <li>Dimanche</li>
+              <li>: <strong>9.30 - 10.30</strong></li>
+              </ul>
+              </div>                
+          </div>
+          <div class="col-md-2">
+              <div class="footer-widget">
+
+              </div>                
+          </div>           
+
+      </div>
+  </div>
+</div>
+<!-- /Footer-section -->
+
+<!-- Tiny-footer Section -->
+<div class="tiny-footer-section">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-offset-4 col-md-6">
+              <div class="tiny-footer-copyright">Copyright 2016 @ASSIREM Tous les droits réservées</div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- /Tiny Footer-section -->
+<!-- jquery -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/menumaker.js"></script> 
+<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="js/theme.js"></script>
+<script type="text/javascript" src="js/gallery.js"></script> 
+<!-- end  jquery -->
+</body>
+
+
+</html>

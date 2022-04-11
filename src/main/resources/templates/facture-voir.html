@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title th:text="'ASSIREM : Facture ' + ${facture.getIdFacture()}"></title>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta name="description" content="Maisons de retraite pour personnes âgées"/>
+    <meta name="keywords" content="Assirem, Maison, Medicalisé, Maisons de retraite ">
+    <meta name="author" content="Naoual & Fatma"/>
+    <meta name="MobileOptimized" content="320"/>
+    <!-- favicon-icon -->
+    <link rel="icon" type="image/icon" href="images/favicon/favicon.ico">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Menu marker CSS -->
+    <link href="css/fontello.css" rel="stylesheet">
+    <!-- Template fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,800" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Font simple-line-icons CSS -->
+    <link href="css/simple-line-icons.css" rel="stylesheet">
+    <!-- Font Custom  CSS -->
+    <link href="css/menumaker.css" rel="stylesheet">
+    <!-- OWL CSS -->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <!-- Template Style CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Stucture CSS -->
+    <link href="css/stucture.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="css/stucture.css" rel="stylesheet">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+
+    <!-- Select2 CSS -->
+    <link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap-tagsinput/css/bootstrap-tagsinput.css">
+
+    <link rel="stylesheet" href="assets/plugins/dropzone/dropzone.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" media="all">
+
+    <link rel="stylesheet" href="assets/css/printView.css" media="print">
+
+    <style>
+        p {
+            font-size: large !important;
+        }
+
+        table tr {
+            font-size: medium !important;
+        }
+        table td {
+            font-size: medium !important;
+        }
+        table th {
+            font-size: medium !important;
+        }
+    </style>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.min.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+<div class="topbar">
+    <div class="container" id="myContainer">
+        <div class="row">
+            <div class="col-md-5 col-sm-5">
+                <p class="wel-msg">Bienvenu Chez ASSIREM | Maison de Retraite Médicalisée</p>
+            </div>
+            <div class="col-md-7 col-sm-7 hidden-xs">
+                <div class="topbar-contact"> <span class="topbar-email topbar-info">
+						<a href="#"><i class="fa fa-envelope"></i>info@maison_retraire.com</a></span>
+                    <span class="topbar-info"><a href="#">
+							<i class="fa fa-phone" aria-hidden="true"></i>0193950000</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Topbar -->
+
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+        <!-- Header -->
+        <header class="header">
+            <nav class="navbar navbar-expand-lg header-nav"
+                 style="background:linear-gradient(to right, #16BFFD 0%, #CB3066  100%, #16BFFD  100%)">
+                <div class="navbar-header">
+
+
+                    <a style="width: 30%" class="navbar-brand" href="#" th:href="@{/}">
+                        <img src="images/Assirem-logo.png" class="img-responsive" alt="Logo" style="width: 200px">
+                        <strong style="color: black;  font-size: 1.5em; "><i>ASSIREM</i></strong>
+                    </a>
+
+                </div>
+                <ul class="nav header-navbar-rht">
+                    <!-- User Menu -->
+                    <li class="nav-item dropdown has-arrow logged-item">
+                        <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+								<span class="user-img">
+									<img class="rounded-circle" src="assets/img/user.png" width="31" alt="Eric Buckles">
+								</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <div class="user-header">
+                                <div class="avatar avatar-sm">
+                                    <img src="assets/img/user.png" alt="User Image" class="avatar-img rounded-circle">
+                                </div>
+                                <div class="user-text">
+                                    <label>naw aghouiles</label>
+                                </div>
+                            </div>
+
+                            <a class="dropdown-item" href="doctor-profile-settings.html">Edit Profil</a>
+                            <a class="dropdown-item" href="#" th:href="@{/login}">Logout</a>
+                        </div>
+                    </li>
+                    <!-- /User Menu -->
+                </ul>
+            </nav>
+        </header>
+        <!-- /Header -->
+
+        <!-- Breadcrumb -->
+<!--        <div class="breadcrumb-bar">-->
+<!--            <div class="container-fluid">-->
+<!--                <div class="row align-items-center">-->
+<!--                    <div class="col-md-12 col-12">-->
+<!--                        <nav aria-label="breadcrumb" class="page-breadcrumb">-->
+<!--                            <ol class="breadcrumb">-->
+<!--                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>-->
+<!--                                <li class="breadcrumb-item active" aria-current="page">List Des Activités</li>-->
+<!--                            </ol>-->
+<!--                        </nav>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+        <!-- /Breadcrumb -->
+
+        <!-- Page Content -->
+        <div id="myDiv" class="submit-section submit-btn-bottom" style="padding: 20px 50px 5px 86%;">
+            <a class="btn btn-primary bg-info float-end mt-2" style="font-size: 2em" onclick="window.print();return false;">
+                <i class="fas fa-print"></i> Imprimer
+            </a>
+        </div>
+
+        <div class="content" id="toPrint">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="invoice-content">
+                            <div class="invoice-item">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="invoice-logo">
+                                            <img src="images/Assirem-logo.png" alt="logo">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="invoice-details">
+                                            <strong>Facture ID:</strong> <span th:text="${facture.getIdFacture()}"></span> <br>
+                                            <strong>Date:</strong>
+                                            <span th:text="${#temporals.format(T(java.time.LocalDate).of(#dates.year(facture.getDateF()),
+                                               #dates.month(facture.getDateF()), #dates.day(facture.getDateF())),
+                                                'dd MMMM yyyy', new java.util.Locale('fr', 'FR'))}">
+                                            </span> <br>
+                                            <strong>Status:</strong>
+                                            <span th:if="${facture.getEtat()} == 'Confirmée'">En attente de payement</span>
+                                            <span th:if="${facture.getEtat()} == 'Payée'">Payée</span><br>
+                                        </p>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="invoice-item">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="invoice-info">
+                                            <strong class="customer-text">De</strong>
+                                            <p class="invoice-details invoice-details-two">
+                                                Assirem : Maison de retraite <br>
+                                                23 Boulevard de France,<br>
+                                                Évry, France <br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="invoice-info invoice-info2">
+                                            <strong class="customer-text">Facturé à </strong>
+                                            <p class="invoice-details">
+                                                <span th:text="${facture.getPatient().getNom()} + ' ' + ${facture.getPatient().getPrenom()}"></span><br>
+                                                <span th:text="${facture.getPatient().getAdresse()}"></span>, <br>
+                                                France <br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="invoice-item">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="invoice-info">
+                                            <strong class="customer-text">Informations supplémentaires</strong>
+                                            <p class="invoice-details invoice-details-two">
+                                                Type de GIR : <span th:text="${facture.getPatient().getGir().getType()}"></span><br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="invoice-item invoice-table-wrap">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="table-responsive">
+                                            <table class="invoice-table table table-bordered">
+                                                <thead>
+                                                <tr>
+                                                    <th class="text-center">Description</th>
+                                                    <th class="text-center">Type</th>
+<!--                                                    <th class="text-center">Durée</th>-->
+                                                    <th class="text-end">Prix </th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr th:each="activity : ${activityList}">
+                                                    <td th:text="${activity.getDescription()}"></td>
+                                                    <td class="text-center">Activité</td>
+<!--                                                    <td>/</td>-->
+                                                    <td class="text-end" th:text="${activity.getPrixA()} + '€'"></td>
+                                                </tr>
+                                                <tr th:each="prestation : ${prestationList}">
+                                                    <td th:text="${prestation.getDesignationP()}"></td>
+                                                    <td class="text-center">Prestation</td>
+<!--                                                    <td>/</td>-->
+                                                    <td class="text-end" th:text="${prestation.getPrix()} + '€'"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td th:text="${nombreJours} + ' jours du séjours'"></td>
+                                                    <td class="text-center">Séjour</td>
+                                                    <td class="text-end" th:text="${prixSejour} + '€'"></td>
+                                                </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-xl-4 ms-auto">
+                                        <div class="table-responsive" style="margin-top: 5px">
+                                            <table class="invoice-table-two table">
+                                                <tbody>
+<!--                                                <tr>-->
+<!--                                                    <th>Subtotal:</th>-->
+<!--                                                    <td><span>$350</span></td>-->
+<!--                                                </tr>-->
+<!--                                                <tr>-->
+<!--                                                    <th>Discount:</th>-->
+<!--                                                    <td><span>-10%</span></td>-->
+<!--                                                </tr>-->
+                                                <tr>
+                                                    <th>Prix Total:</th>
+                                                    <td style="border-top: none"><span th:text="${facture.getPrixTotal()} + '€'"></span></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+<!--                            <div class="other-info">-->
+<!--                                <h4>Other information</h4>-->
+<!--                                <p class="text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus-->
+<!--                                    sed dictum ligula, cursus blandit risus. Maecenas eget metus non tellus dignissim-->
+<!--                                    aliquam ut a ex. Maecenas sed vehicula dui, ac suscipit lacus. Sed finibus leo vitae-->
+<!--                                    lorem interdum, eu scelerisque tellus fermentum. Curabitur sit amet lacinia lorem.-->
+<!--                                    Nullam finibus pellentesque libero.</p>-->
+<!--                            </div>-->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Page Content -->
+
+        <!-- Footer-section -->
+        <div class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Footer-section -->
+
+    <!-- Tiny-footer Section -->
+    <div class="tiny-footer-section" id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-4 col-md-6">
+                    <div class="tiny-footer-copyright">Copyright 2016 @ASSIREM Tous les droits réservées</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Tiny Footer-section -->
+</div>
+</div>
+<!-- /Main Wrapper -->
+
+<!-- jQuery -->
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap Core JS -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<!-- Sticky Sidebar JS -->
+<script src="assets/plugins/theia-sticky-sidebar/ResizeSensor.js"></script>
+<script src="assets/plugins/theia-sticky-sidebar/theia-sticky-sidebar.js"></script>
+
+<!-- Select2 JS -->
+<script src="assets/plugins/select2/js/select2.min.js"></script>
+
+<!-- Dropzone JS -->
+<script src="assets/plugins/dropzone/dropzone.min.js"></script>
+
+<!-- Bootstrap Tagsinput JS -->
+<script src="assets/plugins/bootstrap-tagsinput/js/bootstrap-tagsinput.js"></script>
+
+<!-- Profile Settings JS -->
+<script src="assets/js/profile-settings.js"></script>
+
+<!-- Custom JS -->
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
